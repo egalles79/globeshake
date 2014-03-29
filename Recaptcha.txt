@@ -1,0 +1,8 @@
+Domain Name:	www.ecopetit.cat
+This is a global key. It will work across all domains.
+
+Public Key:	6LcdGusSAAAAAICX4XFMHW0lisGt_629T1nd51rw
+Use this in the JavaScript code that is served to your users
+
+Private Key:	6LcdGusSAAAAAP2CgZKygVwjT79hqVhXcTW-5C7x
+Use this when communicating between your server and our server. Be sure to keep it a secret.

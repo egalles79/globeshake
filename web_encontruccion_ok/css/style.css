@@ -1,0 +1,98 @@
+@charset "UTF-8";
+html {
+height: 100%;}
+@font-face {
+    font-family: 'heroic_condensed_regularRg';
+    src: url('../fonts/typetrust_-_heroiccondensed-regular-webfont.eot');
+    src: url('../fonts/typetrust_-_heroiccondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/typetrust_-_heroiccondensed-regular-webfont.woff') format('woff'),
+url('../fonts/typetrust_-_heroiccondensed-regular-webfont.ttf') format('truetype'),
+url('../fonts/typetrust_-_heroiccondensed-regular-webfont.svg#heroic_condensed_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	 color: #000000;
+	 font-family:heroic_condensed_regularRg;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	clear: both;
+    float: left;
+    font-size: 2em;
+    line-height: 0.4em;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center !important;
+	font-weight: normal;
+    width: 100%;
+}
+/* cabecera*/
+.h_ok {
+	margin-top:6px;
+	
+}
+.cabecera {
+	background-color: #47789F;
+	 -webkit-box-shadow: 3px 3px 3px #999999;
+   -moz-box-shadow: 3px 3px 3px #999999;
+   box-shadow: 3px 3px 3px #999999;
+    height: 25px;
+	width:	100%;
+}
+a img { 
+    background-repeat: no-repeat;
+    border: medium none;
+    margin-top: 3%;
+}
+/* container*/
+.container {
+	 background-color: #FFFFFF;
+    height: 85%;
+    margin: 0 auto;
+    width: 89%;
+}
+
+
+
+.e_contr_es {	
+	background-image: url("../img/p_construccion.png");
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 9em;
+    margin-bottom: 32px;
+    margin-top: 1%;
+    width: 100%;
+}
+
+
+.e_contr_en{
+background-image: url("../img/p_construction_en.png");
+background-position: 50% center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 10em;
+    margin-bottom: 32px;
+    margin-top: 1%;
+    width: 100%;
+}
+.content {
+	
+    float: left;
+    width: 100%;
+}
+
+/* ~~ El pie de página ~~ */
+.fter {
+	 background-color: #47789F;
+    clear: both;
+    height: 89px;
+}
+
+

@@ -1,0 +1,40 @@
+
+#show_header_window:hover{ text-decoration: none }
+
+#show_header_window:hover{ text-decoration: none }
+
+.header_window{display:none; position:absolute; background-color:#FFFFFF;  
+	width:323px; margin-left:-127px; -moz-border-radius: 5px 0 0 0; -webkit-border-radius: 5px 0 0 0; border-radius: 5px 0 0; 
+	border-left: 4px solid #eeeeee; border-bottom: 4px solid #eeeeee; z-index:99999;
+color:#47789f;padding:15px;}
+
+.header_window .left{float:left;}
+.header_window .right{float:right;}
+
+.header_window .name{ margin-bottom: 10px; }
+.header_window .body{ padding:15px;}
+.header_window .avatar{float:left; border: 1px solid #eeeeee; padding: 2px}
+.header_window .info{float:left; margin-left:15px; width:200px;}
+.header_window .info .user{ color: #444444; font-weight: bold }
+.header_window .info .icons{margin-left:7px;}
+.header_window .info .view_link{ margin-top: 7px; font-size:12px; }
+.header_window .info .view_link a{ color:#999999; text-decoration:underline; }
+.header_window .info .email{ font-size:12px; }
+
+.header_window .links{list-style:none; margin-top: 10px; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #f9f9f9;  margin-right:-10px; margin-left:-10px;}
+.header_window .links li{float:left; margin-right:10px; max-width:55px; min-width:46px; text-align:center;}
+.header_window .footer{padding:10px; background-color:#e0e0e0;}
+.header_window .upgrade{float:left;}
+
+
+#window_area .header_window{display:none; position:absolute; background-color:#FFFFFF; width:323px; -moz-border-radius: 5px 0 5px 5px; -webkit-border-radius: 5px 0 5px 5px; border-radius:5px 0 5px 5px; -o-border-radius:5px 0 5px 5px; border:4px solid #eeeeee; border-top:0px; border-right:0px; margin-left:-145px; margin-top:-8px; z-index:2000;}
+
+
+#window_area{ margin-top:5px; float:right;}
+#window_area .login{ color: #ffffff; cursor:pointer; padding:5px 40px 5px 10px !important; margin:4px; margin-left:50px; 
+	background:#47789f url(images/flecha-off.png) no-repeat 90% center; border-radius:5px; -moz-border-radius:5px;
+	 -webkit-border-radius:5px; width:80px !important;
+	 border-color:#fff;border-style:solid;
+	border-width: 1px;}
+#window_area .login:hover{ }
+#window_area .login.active{color: #47789f; background:#ffffff url(images/flecha-on.png) no-repeat 90% center; border-bottom-radius:0px; -moz-border-bottom-radius:0px; -webkit-bottom-border-radius:0px;  border-bottom:0px; z-index:50;}

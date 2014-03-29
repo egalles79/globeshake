@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine On
+#RewriteBase /
+#RewriteCond %{HTTP_HOST} !^www\.globeshake\.com$ [NC]
+#RewriteRule ^(.*)$ http://www.globeshake.com/$1 [R=301,L]
+#RewriteRule ^(.*)$ index.php/$1 [L]

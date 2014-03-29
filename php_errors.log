@@ -1,0 +1,1 @@
+[04-Feb-2014 12:32:57] PHP Fatal error:  Call to undefined method productes::nuevos() in /usr/home/ecopetit.cat/web/application/core/productes_base.php on line 10
