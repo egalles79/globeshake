@@ -843,6 +843,32 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 		}
 
 	}
+
+	public function get_password($user_id = FALSE)
+	{
+		if (empty($user_id))
+	    {
+			return FALSE;
+	    }
+
+		
+		$this->db->select('uacc_password');
+		$this->db->from('user_accounts');
+		$this->db->where('uacc_id', $user_id);
+
+		
+
+	    $query = $this->db->get();
+	    
+	    if ($query->num_rows() > 0) {
+			$row = $query->row();
+			return $row->uacc_password;
+		}
+		else {
+			return false;
+		}
+
+	}
 	
 	public function get_data($user_id = FALSE)
 	{
@@ -1049,6 +1075,7 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			// Verify that $activation_token matches database record.
 			else if ($verify_token && strlen($activation_token) == 40)
 			{
+
 				$sql_where = array(
 					$this->auth->tbl_col_user_account['id'] => $user_id,
 					$this->auth->tbl_col_user_account['activation_token'] => $activation_token
@@ -1073,7 +1100,17 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 
 		$this->db->update($this->auth->tbl_user_account, $sql_update, array($this->auth->tbl_col_user_account['id'] => $user_id));
 
-	    return $this->db->affected_rows() == 1;
+	    if ($this->db->affected_rows() == 1) {
+	    	if ($this->automatic_login($user_id, false)) {
+	    		return true;
+	    	} else {
+
+	    		return false;
+	    	}
+		} else {
+			return false;
+		}
+	    	
 	}
 
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###
@@ -2433,5 +2470,56 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			'expire' => ''
 		);
 		set_cookie($ci_session);	
+	}
+
+
+	public function automatic_login($user_id, $remember_user) {
+
+		$sql_select = array(
+			$this->auth->primary_identity_col, 
+			$this->auth->tbl_col_user_account['id'], 
+			$this->auth->tbl_col_user_account['password'], 
+			$this->auth->tbl_col_user_account['group_id'], 
+			$this->auth->tbl_col_user_account['activation_token'], 
+			$this->auth->tbl_col_user_account['active'], 
+			$this->auth->tbl_col_user_account['suspend'], 
+			$this->auth->tbl_col_user_account['last_login_date'], 
+			$this->auth->tbl_col_user_account['failed_logins']
+		);
+		
+		$sql_where = array($this->auth->tbl_col_user_account['id'] => $user_id);
+		
+		// Set any custom defined SQL statements.
+		$this->flexi_auth_lite_model->set_custom_sql_to_db();
+
+		$query = $this->db->select($sql_select)
+			->where($sql_where)
+			->get($this->auth->tbl_user_account);
+
+
+		if ($query->num_rows() == 1)
+	    {
+			$user = $query->row();
+
+			// Set user login sessions.
+			if ($this->set_login_sessions($user, TRUE))
+			{
+				// Set 'Remember me' cookie and database record if checked by user.
+				if ($remember_user)
+				{
+					$this->remember_user($user->{$this->auth->database_config['user_acc']['columns']['id']});
+				}
+				// Else, ensure any existing 'Remember me' cookies are deleted.
+				// This can occur if the user logs in via password, whilst already logged in via a "Remember me" cookie. 
+				else
+				{
+					$this->flexi_auth_lite_model->delete_remember_me_cookies();
+				}
+				return TRUE;
+			}
+		}
+		else {
+			return false;
+		}
 	}
 }

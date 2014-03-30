@@ -35,12 +35,7 @@
 								<li class="info_req">
 									<label for="last_name"><?=lang('user.cognoms');?></label>
 									<input type="text" id="last_name" name="update_last_name" value="<?php echo set_value('update_last_name',$user['upro_last_name']);?>"/>
-								</li>
-								<li>
-									<?php $newsletter = ($user['upro_newsletter'] == 1) ;?>
-									<label for="newsletter"><?=lang('user.newsletter');?></label>
-									<input type="checkbox" id="newsletter" name="update_newsletter" value="1" <?php echo set_checkbox('update_newsletter',1,$newsletter); ?>/>
-								</li>
+								</li>								
 								<li class="info_req">
 									<label><?=lang('user.regEmail');?></label>
 									<input type="text" id="email" name="update_email" value="<?php echo set_value('update_email',$user[$this->flexi_auth->db_column('user_acc', 'email')]);?>" class="tooltip_trigger"
@@ -48,12 +43,7 @@
 									/>
 									
 								</li>
-								<li>
-									<label for="username"><?=lang('user.regUsername');?></label>
-									<input type="text" id="username" name="update_username" value="<?php echo set_value('update_username',$user[$this->flexi_auth->db_column('user_acc', 'username')]);?>" class="tooltip_trigger"
-										title="Set a username that can be used to login with."
-									/>
-								</li>
+								
 								
 							</ul>
 							<ul>

@@ -264,6 +264,7 @@ class Auth extends controlador {
     // Account Activation
     ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###  
 
+
     /**
      * activate_account
      * User account activation via email.
@@ -275,25 +276,41 @@ class Auth extends controlador {
         // The 3rd activate_user() parameter verifies whether to check '$token' matches the stored database value.
         // This should always be set to TRUE for users verifying their account via email.
         // Only set this variable to FALSE in an admin environment to allow activation of accounts without requiring the activation token.
-        $ret = $this->flexi_auth->activate_user($user_id, $token, TRUE);
+        
 
+        $response = $this->flexi_auth->activate_user($user_id, $token, TRUE);
+
+        
+        
         // Save any public status or error messages (Whilst suppressing any admin messages) to CI's flash session data.
         $this->session->set_flashdata('message', $this->flexi_auth->get_messages());
 
+        //redirect('auth');
+        
 
 // Get any status message that may have been set.
-            $this->data['message'] = (! isset($this->data['message'])) ? $this->session->flashdata('message') : $this->data['message'];     
+        $this->data['message'] = (! isset($this->data['message'])) ? $this->session->flashdata('message') : $this->data['message'];     
 
-            $Message = $this->data['message'];
-            $data = $this->load_page();
-            $data['email'] = $this->flexi_auth->get_email($user_id);
-            $data['message'] = lang('activate_successful');
-            $data['main_template']  = 'users/login';
-            $data['title'] = '';
+        $Message = $this->data['message'];
 
-            $data['description'] = '';
-            
-            $this->load->view('main_template', $data);  
+        $data = $this->load_page();
+
+        if ($response) {
+            $data['logged'] = false;
+            $data['message'] = '';//lang('activate_successful');
+            $data['main_template']  = 'users/account_activated';
+
+        }
+        else {
+            $data['message'] = $Message;
+            $data['main_template']  = 'users/register';
+        }
+        
+        $data['title'] = '';
+        $data['description'] = '';
+        
+        $this->load->view('main_template', $data); 
+        $data['logged'] = $this->flexi_auth->is_logged_in();  
        
     }
     
@@ -400,6 +417,7 @@ class Auth extends controlador {
         
         $data['message'] = $Message;
         if ($PasswordUpdated) {
+            $data['logged'] = false;  
             $data['main_template']  = 'users/password_updated';
             $this->data['message'] = null;
             $data['message'] = null;
@@ -410,6 +428,7 @@ class Auth extends controlador {
         $data['title'] = '';
         $data['description'] = '';
         $this->load->view('main_template', $data);  
+        $data['logged'] = $this->flexi_auth->is_logged_in();  
     }
 
    

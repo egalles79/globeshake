@@ -75,7 +75,8 @@ class Flexi_auth extends Flexi_auth_lite
 		
 		return FALSE;
 	}
-		
+	
+	
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###
 	
 	/**
@@ -177,6 +178,7 @@ class Flexi_auth extends Flexi_auth_lite
 	// USER TASK FUNCTIONS
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###	
 	
+
 	/**
 	 * activate_user
 	 * Activates a users account allowing them to login to their account. 
@@ -187,10 +189,13 @@ class Flexi_auth extends Flexi_auth_lite
 	 */
 	public function activate_user($user_id, $activation_token = FALSE, $verify_token = TRUE)
 	{
+		
 
 		if ($this->CI->flexi_auth_model->activate_user($user_id, $activation_token, $verify_token))
 		{
+
 			$this->CI->flexi_auth_model->set_status_message('activate_successful', 'config');
+
 			return TRUE;
 		}
 

@@ -3,26 +3,34 @@
 	{
 		"selected_items":
 		[
+			[
+				"getE",
+				"get_email"
+			],
+			[
+				"fle",
+				"flexi_auth"
+			],
+			[
+				"get_id",
+				"get_user_id"
+			],
+			[
+				"ident",
+				"identity_cols"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"cla",
+				"className"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "application/controllers/auth_public.php",
-			"settings":
-			{
-				"buffer_size": 13565,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/views/users/forgot_password.php",
-			"settings":
-			{
-				"buffer_size": 725,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -48,61 +56,134 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/views/users/blog.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/views/users/login.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/models/auth_model.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/models/auth_admin_model.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/controllers/auth_public.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/controllers/auth.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/controllers/admin.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/core/controlador.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/config/config.php",
-		"/C/Users/Eloi/AppData/Local/Temp/Rar$DRa0.552/librerias_ci/application/config/routes.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/config/routes.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/views/users/verificar_mail.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/controllers/verificar_mail.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/core/MY_Lang.php",
-		"/C/Users/Eloi/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/config/routes.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/.htaccess",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/application/config/breadcrumb.php",
-		"/C/Users/Eloi/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/config/config.php",
-		"/C/Program Files (x86)/EasyPHP-DevServer-13.1VC11/data/localweb/globeshake/protected/views/site/contact.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/cookies.txt",
-		"/C/Program Files (x86)/EasyPHP-DevServer-13.1VC11/data/localweb/globeshake/protected/modules/rights/components/RWebUser.php",
-		"/C/Users/Eloi/Documents/globalshake",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/web/CController.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/docs/README.md",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/demos/blog/protected/models/User.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/modules/UserAdmin/components/UAccessController.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/gii/components/UserIdentity.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/web/auth/CWebUser.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/components/WebUser.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/modules/UserAdmin/data/user_admin.sql",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/controllers/SiteController.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/modules/UserAdmin/README.md",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/views/site/pages/about.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/config/main.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/yii.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/YiiBase.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/db/CDbConnection.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/build/commands/lite/protected/models/LoginForm.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/build/commands/lite/protected/views/site/index.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/demos/blog/protected/models/ContactForm.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/views/site/index.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/gii/views/default/login.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/gii/models/LoginForm.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/models/LoginForm.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/web/auth/CUserIdentity.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/framework/web/auth/CBaseUserIdentity.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/build/commands/lite/protected/components/UserIdentity.php",
-		"/C/Users/Eloi/Dropbox/Web_Globeshake/_old/application/views/pages/about.php",
-		"/C/Users/Eloi/Dropbox/ecopetit_web/NovaWeb/codeigniter/.htaccess",
-		"/C/Users/Eloi/Documents/byhours2/api/View/Swagger/docs_version.ctp",
-		"/C/Users/Eloi/Documents/byhours2/api/View/Books/docs_index.ctp",
-		"/C/Users/Eloi/Documents/byhours2/api/View/Hotels/docs_index.ctp",
-		"/C/Users/Eloi/Documents/byhours2/admin/Console/Command/MigrationShell.php",
-		"/C/Users/Eloi/Documents/byhours2/api/Config/bootstrap.php",
-		"/C/Users/Eloi/Documents/byhours2/api/Config/bootstrap_config.php"
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/header.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/main_template.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/footer.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/register.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/password_updated.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/content_private.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/home.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/content_public.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/auth.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/entorno.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/forgot_password.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/index.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/resend_activation.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/auth_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/flexi_auth_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/libraries/Flexi_auth.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/login.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/includes/email/forgot_password.tpl.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/flexi_auth_lite_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/libraries/Flexi_auth_lite.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/language/spanish/flexi_auth_lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/language/english/flexi_auth_lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/flexi_auth.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/includes/email/registration_welcome.tpl.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/core/MY_Lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/account_activated.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/includes/email/activate_account.tpl.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/verificar_mail.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/verificar_mail.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/constants.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/config.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/language/spanish/user_lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/core/controlador.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/forgot_password_update.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/linkafirm.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/css/style.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/auth_public.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/style.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_recuperarcontrasena03(llega_al_mail).html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/index.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/index_view.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/demo/public_examples/resend_activation_token_view.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_recuperarcontrasena05.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/password_sent.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/demo/public_examples/forgot_password_update_view.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_recuperarcontrasena04.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_siyaestas.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_recuperarcontrasena03(llega_al_mail_enlineaok).html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/demo/public_examples/forgot_password_view.php",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/menu.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/css/bootstrap/style.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake_old/application/views/users/login.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/resposta.php",
+		"/C/PROGRA~2/EASYPH~1.1VC/data/localweb/linkafirm.html",
+		"/C/PROGRA~2/EASYPH~1.1VC/data/localweb/resposta.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/login.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/linkafirm2.htm",
+		"/C/Users/MIRIAM/AppData/Local/Temp/Rar$DRa0.992/demo/index.html",
+		"/C/Users/MIRIAM/Dropbox/Plantilla_web/HTML/processForm.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/css/styles2.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/autoload.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_verificacion_registro(llega_al_mail).html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/login2.php",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/models/categories_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/registro_sinoestasregistrado.html",
+		"/C/Users/MIRIAM/Downloads/flexi-auth-master/flexi-auth-master/demo_files/application/views/includes/email/activate_account.tpl.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/welcome_message.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/js/custom.js",
+		"/C/Users/MIRIAM/Downloads/flexi-auth-master/flexi-auth-master/demo_files/application/controllers/auth.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/js/custom.js",
+		"/C/Users/MIRIAM/Downloads/flexi-auth-master/flexi-auth-master/library_files/application/libraries/Flexi_auth.php",
+		"/C/Users/MIRIAM/Downloads/flexi-auth-master/flexi-auth-master/demo_files/application/models/demo_auth_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/robots.txt",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/routes.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake2/system/libraries/Email.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/system/libraries/Email.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/email.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/admin.php",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/config/routes.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake2/application/config/database.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/database.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake2/application/config/config.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake2/application/config/routes.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake2/application/config/autoload.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/language/spanish/form_validation_lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/css/jquery/jquery-ui-1.10.4.custom.min.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/css/jquery/jquery-ui.css",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/demo_auth_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/config/breadcrumb.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/includes/header.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/register.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/sendEmail.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/system/database/DB_active_rec.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/demo_auth_admin_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/auth_lite.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/core/MY_Config.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/country_model.php",
+		"/C/Users/MIRIAM/Dropbox/Plantilla_web/HTML/support-forum.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/user_guide/messages/message_config_view.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/login_linkafirm.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/language/spanish/country_lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/system/core/Lang.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/marques_model.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/models/sitemaper_model.php",
+		"/C/Users/MIRIAM/Dropbox/Plantilla_web/HTML/index.html",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/floren/CODI_NOSTRE.html",
+		"/C/Users/MIRIAM/Desktop/CODI_NOSTRE.html",
+		"/C/Users/MIRIAM/Dropbox/Corma/Web/index.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/js/jquery.nicescroll.min.js",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/users/register_old.php",
+		"/C/Users/MIRIAM/Desktop/david jofre/.htaccess",
+		"/C/Users/MIRIAM/Desktop/david jofre/index.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/daniel_craig.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/animation.html",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/header.php",
+		"/C/Users/MIRIAM/Desktop/david jofre/drawing.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/games.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/models.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/showreels.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/vfx.html",
+		"/C/Users/MIRIAM/Desktop/david jofre/about.html",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/capsalera.php",
+		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/footer.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/js/jquery.min.js",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/menu.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/test.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/test.php",
+		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/inicio.php"
 	],
 	"find":
 	{
@@ -113,12 +194,64 @@
 		"height": 0.0,
 		"where_history":
 		[
-			"C:\\Users\\Eloi\\Dropbox\\Web_Globeshake",
-			"C:\\Program Files (x86)\\EasyPHP-DevServer-13.1VC11\\data\\localweb",
-			"C:\\Program Files (x86)\\EasyPHP-DevServer-13.1VC11\\data\\localweb\\globeshake",
-			"C:\\Program Files (x86)\\EasyPHP-DevServer-13.1VC11\\data\\localweb",
-			"C:\\Program Files (x86)\\EasyPHP-DevServer-13.1VC11\\data\\localweb\\globeshake",
-			"C:\\Users\\Eloi\\Dropbox\\Web_Globeshake"
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application\\views",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application\\language",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\floren",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\css",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\css",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\js",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\yii",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user\\controllers",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\views\\layouts",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user\\views\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user\\controllers",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user\\models",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake\\protected\\modules\\user",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\globeshake",
+			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake"
 		]
 	},
 	"find_state":
@@ -126,44 +259,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"cambia",
-			"demo_",
-			"Demo_",
-			"demo_",
-			"Demo_",
-			"demo_",
-			".js",
-			"captcha",
-			"contacto",
+			"set_login_sessions",
+			"get_ea",
 			"login",
-			"oauth",
-			"RWebUser",
-			"actionLogin",
-			"updateTable",
-			"_createDynamicModel",
-			"tablePre",
-			"class Controller extend",
-			"demo",
-			"CDbConnection",
-			"new CDbConnection",
-			"pick up a password here",
-			"{		",
-			"authenticat",
-			"Connect",
-			"Verification code",
-			"Selecciona un pa",
-			"Selecciona un pai",
-			"angola",
-			"No pot ser nul",
-			"about",
-			"availableTags",
-			"<input id=\"ta",
-			"<input id=\"tags\">",
-			"Tags",
-			"by_products",
-			"Product",
-			"by_product",
-			"product"
+			"activate_user",
+			"email_template_forgot_password",
+			"forgotten_password",
+			"token",
+			"Globeshake",
+			"Forgotten Password Verification",
+			"get_user_id",
+			"verifica_mail",
+			"$data['title'] = lang('activation_email_successful');\n        $data['description'] = str_replace('%e', $email, lang('activation_email_content'));\n        $data['main_template']  = 'users/verificar_mail';\n        $this->load->view('main_template', $data);  ",
+			"activate_acco",
+			"send_email",
+			"email_template_activate",
+			"die",
+			"activation_email_successful",
+			"Se ha enviado un email de activación a su cuenta de correo",
+			"email_template_activate",
+			"activate_account",
+			"user_id",
+			" al verificar tu dirección de correo electrónico obtendrás acceso",
+			"user_password",
+			"activate_successful",
+			"Has validado tu cuenta con éxito",
+			"n is_logged_in",
+			"n get_users",
+			"get_users",
+			"_id",
+			"n get_user_identity",
+			"name",
+			"identity",
+			"get_user",
+			"email",
+			"_email",
+			"email",
+			"user",
+			"header.php",
+			"restablece",
+			"password_forgotten",
+			"logo",
+			"<?php echo $includes_dir;?>",
+			"IMAGES",
+			"IMG_",
+			"logo",
+			"fullwidthbanner",
+			"alt=\"Globeshake\"",
+			"entorno",
+			"You must login to access this area.",
+			"You have been successfully logged out.",
+			"'Errores'",
+			"show_header_window",
+			"is_logged_in",
+			"You must login to access this area.",
+			"email_forgot_password_successful",
+			"Hemos enviado un nuevo email",
+			"Hemos enviado un nuevo mail",
+			"hemos enviado un nuevo mail",
+			"forgotten_password_complete",
+			"password_token_invalid",
+			"el token de tu",
+			"manual_reset_forgotten_password",
+			"forgotten_password",
+			"n_login",
+			"login",
+			"rsitya_con",
+			"rsitya_contras",
+			"rs",
+			"rst",
+			"rsitya",
+			"rsitya_con",
+			"#password",
+			"rsitya_con",
+			"sf-menu colorsubconttootorre sf-js-enabled sf-shadow",
+			": 999",
+			"hregistr_enl",
+			"z-index: 999",
+			"z-index",
+			"z.index",
+			"999",
+			"Reset password for",
+			"manual_reset_forgotten_password",
+			"forgot_password_identity",
+			"Email o nombre de usuario",
+			"validate_forgotten_password",
+			"forgotten_password",
+			"user.titleForgot",
+			"He olvidado la contra",
+			"He oblidado la contraseña",
+			"manual_reset_forgotten_password",
+			"envia mail ok",
+			"manual_reset_forgotten_password/",
+			"forgotten_password",
+			"enable_profiler",
+			"post",
+			"body",
+			"z-index",
+			"identity_cols",
+			"form",
+			"login_user",
+			"link_button",
+			"Entrar",
+			"#submit",
+			"submit",
+			"link_button",
+			"window",
+			"activate_acc",
+			"user.email",
+			"Email o nombre de usuario",
+			"Inicia ses",
+			"Hemos enviado un correo electr",
+			"Haz click en el",
+			"Verifica tu correo electr",
+			"Verifica tu",
+			"electrónica",
+			"An account with this email address or username already exists.",
+			"get_email",
+			"die",
+			"register_account",
+			"function redirect",
+			"Welcome",
+			"welcome_message",
+			"Welcome",
+			"Account activation",
+			"0.6em",
+			"0.6 em",
+			"social a i",
+			".social-head"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -183,61 +406,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "application/controllers/auth_public.php",
-					"settings":
-					{
-						"buffer_size": 13565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/users/forgot_password.php",
-					"settings":
-					{
-						"buffer_size": 725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -283,124 +451,296 @@
 		"selected_items":
 		[
 			[
-				"cformmo",
-				"yii/framework/web/CFormModel.php"
+				"usersregister",
+				"Web_Globeshake/application/views/users/register.php"
 			],
 			[
-				"contact",
-				"globeshake/protected/models/ContactForm.php"
+				"password_updated",
+				"Web_Globeshake/application/views/users/password_updated.php"
+			],
+			[
+				"flexi_auto",
+				"Web_Globeshake/application/models/flexi_auth_model.php"
+			],
+			[
+				"flex",
+				"Web_Globeshake/application/libraries/Flexi_auth.php"
+			],
+			[
+				"auth_model",
+				"Web_Globeshake/application/models/auth_model.php"
+			],
+			[
+				"header",
+				"Web_Globeshake/application/views/plantilla/header.php"
+			],
+			[
+				"flexi_auth_lang",
+				"Web_Globeshake/application/language/english/flexi_auth_lang.php"
+			],
+			[
+				"userslogin",
+				"Web_Globeshake/application/views/users/login.php"
+			],
+			[
+				"forgot_p",
+				"Web_Globeshake/application/views/includes/email/forgot_password.tpl.php"
+			],
+			[
+				"users/login",
+				"Web_Globeshake/application/views/users/login.php"
+			],
+			[
+				"resend_activation",
+				"Web_Globeshake/application/views/users/resend_activation.php"
+			],
+			[
+				"auth_mode",
+				"Web_Globeshake/application/models/auth_model.php"
+			],
+			[
+				"auth",
+				"Web_Globeshake/application/controllers/auth.php"
+			],
+			[
+				"verifi",
+				"Web_Globeshake/application/controllers/verificar_mail.php"
+			],
+			[
+				"verifica_",
+				"Web_Globeshake/application/views/users/verificar_mail.php"
+			],
+			[
+				"activate_account.tpl.php",
+				"Web_Globeshake/application/views/includes/email/activate_account.tpl.php"
+			],
+			[
+				"flexi_auth_model",
+				"Web_Globeshake/application/models/flexi_auth_model.php"
+			],
+			[
+				"flexi",
+				"Web_Globeshake/application/libraries/Flexi_auth.php"
+			],
+			[
+				"controlador",
+				"Web_Globeshake/application/core/controlador.php"
+			],
+			[
+				"config",
+				"Web_Globeshake/application/config/config.php"
+			],
+			[
+				"home",
+				"Web_Globeshake/application/views/home.php"
+			],
+			[
+				"flexi_auth_lite_",
+				"Web_Globeshake/application/models/flexi_auth_lite_model.php"
+			],
+			[
+				"flexi_aut",
+				"Web_Globeshake/application/libraries/Flexi_auth.php"
+			],
+			[
+				"controlador.",
+				"Web_Globeshake/application/core/controlador.php"
+			],
+			[
+				"ento",
+				"Web_Globeshake/floren/entorno.html"
+			],
+			[
+				"flexi_auth",
+				"Web_Globeshake/application/libraries/Flexi_auth.php"
+			],
+			[
+				"register",
+				"Web_Globeshake/application/views/users/register.php"
+			],
+			[
+				"resend_ac",
+				"Web_Globeshake/application/views/demo/public_examples/resend_activation_token_view.php"
+			],
+			[
+				"forgot_password_update",
+				"Web_Globeshake/application/views/users/forgot_password_update.php"
+			],
+			[
+				"usersforgot_",
+				"Web_Globeshake/application/views/users/forgot_password.php"
+			],
+			[
+				"plantillafooter",
+				"Web_Globeshake/application/views/plantilla/footer.php"
+			],
+			[
+				"plantillaheader",
+				"Web_Globeshake/application/views/plantilla/header.php"
+			],
+			[
+				"plantillahea",
+				"Web_Globeshake/application/views/plantilla/header.php"
+			],
+			[
+				"viewsregister",
+				"Web_Globeshake/application/views/users/register.php"
+			],
+			[
+				"style.css",
+				"Web_Globeshake/css/style.css"
+			],
+			[
+				"forgot_passw",
+				"Web_Globeshake/application/views/demo/public_examples/forgot_password_view.php"
+			],
+			[
+				"viewforg",
+				"Web_Globeshake/application/views/users/forgot_password.php"
+			],
+			[
+				"includesforg",
+				"Web_Globeshake/application/views/includes/email/forgot_password.tpl.php"
+			],
+			[
+				"login.ph",
+				"Web_Globeshake/application/views/users/login.php"
+			],
+			[
+				"footer",
+				"Web_Globeshake/application/views/plantilla/footer.php"
+			],
+			[
+				"flexi_a",
+				"Web_Globeshake/application/libraries/Flexi_auth.php"
+			],
+			[
+				"user_lang",
+				"Web_Globeshake/application/language/spanish/user_lang.php"
+			],
+			[
+				"login.php",
+				"application/views/users/login.php"
+			],
+			[
+				"actvate",
+				"application/views/includes/email/activate_account.tpl.php"
+			],
+			[
+				"custom.j",
+				"js/custom.js"
+			],
+			[
+				"db_active_rec",
+				"system/database/DB_active_rec.php"
+			],
+			[
+				"my_lang",
+				"application/core/MY_Lang.php"
+			],
+			[
+				"lang",
+				"system/core/Lang.php"
+			],
+			[
+				"nice",
+				"js/jquery.nicescroll.min.js"
+			],
+			[
+				"main_te",
+				"application/views/main_template.php"
+			],
+			[
+				"registration_welcome.tpl.php",
+				"application/views/includes/email/registration_welcome.tpl.php"
+			],
+			[
+				"configconso",
+				"globeshake/protected/config/console.php"
+			],
+			[
+				"configmain",
+				"globeshake/protected/config/main.php"
+			],
+			[
+				"config/main",
+				"globeshake/protected/config/main.php"
+			],
+			[
+				"cmenu",
+				"yii/framework/zii/widgets/CMenu.php"
+			],
+			[
+				"ziiwidgetscmenu",
+				"_old/framework/zii/widgets/CMenu.php"
+			],
+			[
+				"views/site/ind",
+				"globeshake/protected/views/site/index.php"
 			],
 			[
 				"main.php",
 				"globeshake/protected/config/main.php"
 			],
 			[
-				"rweb",
-				"globeshake/protected/modules/rights/components/RWebUser.php"
+				"configur",
+				"framework/collections/CConfiguration.php"
 			],
 			[
-				"yiib",
-				"yii/framework/YiiBase.php"
+				"main.",
+				"globeshake/protected/config/main.php"
 			],
 			[
-				"cdbconnection",
-				"framework/db/CDbConnection.php"
+				"layoutsmain",
+				"globeshake/protected/views/layouts/main.php"
 			],
 			[
-				"loginform",
-				"framework/gii/models/LoginForm.php"
+				"userident",
+				"testdrive/protected/modules/user/components/UserIdentity.php"
 			],
 			[
-				"user",
-				"demos/blog/protected/models/User.php"
-			],
-			[
-				"configmain",
-				"testdrive/protected/config/main.php"
-			],
-			[
-				"webuser.php",
-				"framework/web/auth/CWebUser.php"
-			],
-			[
-				"useridentity.php",
+				"useriden",
 				"testdrive/protected/components/UserIdentity.php"
 			],
 			[
-				"users",
-				"/C/Users/Eloi/Dropbox/Web_Globeshake/testdrive/protected/modules/UserAdmin/data/user_admin.sql"
+				"userlogin",
+				"testdrive/protected/modules/user/models/UserLogin.php"
 			],
 			[
-				"ccontroller",
-				"testdrive/protected/components/Controller.php"
+				"viewplantilla",
+				"application/views/plantilla/menu.php"
 			],
 			[
-				"site",
-				"testdrive/protected/controllers/SiteController.php"
+				"capsalera",
+				"application/views/plantilla/capsalera.php"
 			],
 			[
-				"uaccescontro",
-				"testdrive/protected/modules/UserAdmin/components/UAccessController.php"
-			],
-			[
-				"sitecontro",
-				"testdrive/protected/controllers/SiteController.php"
-			],
-			[
-				"configmain.",
-				"testdrive/protected/config/main.php"
-			],
-			[
-				"useridenti",
-				"testdrive/protected/components/UserIdentity.php"
-			],
-			[
-				"cbaseuseridentity",
-				"framework/web/auth/CBaseUserIdentity.php"
-			],
-			[
-				"cuseridentity",
-				"framework/web/auth/CUserIdentity.php"
-			],
-			[
-				"useridentity",
-				"framework/gii/components/UserIdentity.php"
-			],
-			[
-				"login",
-				"framework/gii/models/LoginForm.php"
-			],
-			[
-				"yiibase",
-				"framework/YiiBase.php"
-			],
-			[
-				"yii",
-				"framework/yii.php"
-			],
-			[
-				"about.php",
-				"testdrive/protected/views/site/pages/about.php"
-			],
-			[
-				"migration",
-				"admin/Console/Command/MigrationShell.php"
-			],
-			[
-				"hoteldocs",
-				"api/View/Hotels/docs_index.ctp"
+				"controllerhome",
+				"application/controllers/home.php"
 			],
 			[
 				"routes",
-				"api/Config/routes.php"
+				"application/config/routes.php"
 			],
 			[
-				"bootstrap_config",
-				"api/Config/bootstrap_config.php"
+				"databas",
+				"application/config/database.php"
 			],
 			[
-				"bootstrap",
-				"api/Config/bootstrap.php"
+				"database",
+				"application/config/database.php"
+			],
+			[
+				"consta",
+				"application/config/constants.php"
+			],
+			[
+				"bootstr",
+				"css/bootstrap/css/bootstrap.css"
+			],
+			[
+				"plantillheader",
+				"application/views/plantilla/header.php"
 			]
 		],
 		"width": 0.0
@@ -417,6 +757,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 454.0,
+	"side_bar_width": 316.0,
 	"status_bar_visible": true
 }
