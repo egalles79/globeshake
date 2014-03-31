@@ -27,6 +27,7 @@ $lang['user_password_new']							= 'Nueva contraseña';
 $lang['user_password_new_repeat']					= 'Repetir nueva contraseña';
 $lang['user_password_change']						= 'Restablecer contraseña';
 $lang['user_remember']								= 'Recordar la contraseña';
+$lang['user_continuar']								= 'Continuar';
 
 // Account Creation
 $lang['account_creation_successful']				= 'Su cuenta ha sido creada.';
@@ -39,13 +40,13 @@ $lang['account_creation_title']						= 'Regístrese ahora en GlobeShake';
 
 // Password
 $lang['password_invalid']							= "La contraseña debe tener almenos 8 caracteres.";
-$lang['password_change_successful'] 	 	 		= 'La contraseña ha sido correctamente modificada';
+$lang['password_change_successful'] 	 	 		= 'Ha restablecido su contraseña con éxito.';
 $lang['password_change_unsuccessful'] 	  	 		= 'Tu contraseña no coincide con nuestro registro.';
 $lang['password_token_invalid']  					= 'El token de tu contraseña no es válido o ha expirado.'; 
 $lang['email_new_password_successful']				= 'La hemos enviado una nueva contraseña a su correo electrónico.';
 $lang['email_forgot_password_successful']	 		= 'Se ha enviado un email para restablecer su contraseña.';
 $lang['email_forgot_password_unsuccessful']  		= 'No hemos podido resetear su contraseña.'; 
-$lang['email_forgot_password_content']  			= 'Por favor, verifique su email para reestablecer su contraseña'; 
+$lang['email_forgot_password_content']  			= 'Por favor, verifique su email para restablecer su contraseña'; 
 $lang['password_forgotten']							= 'He olvidado la contraseña';
 $lang['password_change_title']						= 'Restablezca su contraseña. Es fácil.';
 $lang['password_change_email']						= 'Introduzca su dirección de correo electrónico para obtener instrucciones';
@@ -53,7 +54,7 @@ $lang['forgot_password_update_title']				= 'Restablezca su contraseña';
 
 // Activation
 $lang['activate_successful']						= 'Su cuenta ha sido activada.<br />Ya puede acceder a GlobeShake.';
-$lang['activate_unsuccessful']						= 'No ha sido posible activar la cuenta. Contacte con el administador.';
+$lang['activate_unsuccessful']						= 'No ha sido posible activar la cuenta.Por favor contacte con el administador.';
 $lang['deactivate_successful']						= 'Su cuenta ha sido deshabilitada.';
 $lang['deactivate_unsuccessful']					= 'No ha sido posible desactivar su cuenta. Contacte con el administrador.';
 $lang['activation_email_successful'] 	 			= 'Se ha enviado un email de activación a su cuenta de correo';

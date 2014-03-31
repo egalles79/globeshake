@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"flexi",
+				"flexi_auth_model"
+			],
+			[
 				"getE",
 				"get_email"
 			],
@@ -31,6 +35,78 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/controllers/auth.php",
+			"settings":
+			{
+				"buffer_size": 21593,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/libraries/Flexi_auth.php",
+			"settings":
+			{
+				"buffer_size": 36887,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/libraries/Flexi_auth_lite.php",
+			"settings":
+			{
+				"buffer_size": 23208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/flexi_auth_model.php",
+			"settings":
+			{
+				"buffer_size": 78036,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/home.php",
+			"settings":
+			{
+				"buffer_size": 9334,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/users/forgot_password.php",
+			"settings":
+			{
+				"buffer_size": 693,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/users/account_update_view.php",
+			"settings":
+			{
+				"buffer_size": 1814,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/MIRIAM/Downloads/regalsGeeks.sql",
+			"settings":
+			{
+				"buffer_size": 547296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/auth_lite.php",
+			"settings":
+			{
+				"buffer_size": 3092,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,6 +132,15 @@
 	},
 	"file_history":
 	[
+		"/C/Web_Globeshake/application/views/users/account_activated.php",
+		"/C/Web_Globeshake/application/views/users/password_updated.php",
+		"/C/Web_Globeshake/application/models/flexi_auth_lite_model.php",
+		"/C/Web_Globeshake/application/models/auth_model.php",
+		"/C/Web_Globeshake/application/libraries/Flexi_auth_lite.php",
+		"/C/Web_Globeshake/application/libraries/phpass/PasswordHash.php",
+		"/C/Web_Globeshake/application/models/flexi_auth_model.php",
+		"/C/Web_Globeshake/application/libraries/Flexi_auth.php",
+		"/C/Web_Globeshake/application/config/flexi_auth.php",
 		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/header.php",
 		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/main_template.php",
 		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/footer.php",
@@ -174,16 +259,7 @@
 		"/C/Users/MIRIAM/Desktop/david jofre/drawing.html",
 		"/C/Users/MIRIAM/Desktop/david jofre/games.html",
 		"/C/Users/MIRIAM/Desktop/david jofre/models.html",
-		"/C/Users/MIRIAM/Desktop/david jofre/showreels.html",
-		"/C/Users/MIRIAM/Desktop/david jofre/vfx.html",
-		"/C/Users/MIRIAM/Desktop/david jofre/about.html",
-		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/capsalera.php",
-		"/C/Users/MIRIAM/Dropbox/ecopetit_web/NovaWeb/codeigniter/application/views/plantilla/footer.php",
-		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/js/jquery.min.js",
-		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/plantilla/menu.php",
-		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/test.php",
-		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/views/test.php",
-		"/C/Users/MIRIAM/Dropbox/Web_Globeshake/application/controllers/inicio.php"
+		"/C/Users/MIRIAM/Desktop/david jofre/showreels.html"
 	],
 	"find":
 	{
@@ -191,9 +267,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Web_Globeshake",
+			"C:\\Web_Globeshake\\application\\models",
 			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
 			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake\\application",
 			"C:\\Users\\MIRIAM\\Dropbox\\Web_Globeshake",
@@ -259,6 +337,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"die",
+			"set_login_sessions",
+			"automatic_login",
+			"activate_",
+			"is_logged_in_via_password",
+			"redirect",
+			"auth",
+			"redir",
+			"redirect",
+			"activa",
+			"n login",
+			"validate_login_onload",
+			"verify_password",
+			"n login",
+			"login",
+			"hash",
+			"login",
+			"activate_user",
 			"set_login_sessions",
 			"get_ea",
 			"login",
@@ -368,25 +464,7 @@
 			"activate_acc",
 			"user.email",
 			"Email o nombre de usuario",
-			"Inicia ses",
-			"Hemos enviado un correo electr",
-			"Haz click en el",
-			"Verifica tu correo electr",
-			"Verifica tu",
-			"electrónica",
-			"An account with this email address or username already exists.",
-			"get_email",
-			"die",
-			"register_account",
-			"function redirect",
-			"Welcome",
-			"welcome_message",
-			"Welcome",
-			"Account activation",
-			"0.6em",
-			"0.6 em",
-			"social a i",
-			".social-head"
+			"Inicia ses"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -404,8 +482,254 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/auth.php",
+					"settings":
+					{
+						"buffer_size": 21593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18076,
+								18076
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6002.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/libraries/Flexi_auth.php",
+					"settings":
+					{
+						"buffer_size": 36887,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5564,
+								5564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2717.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/libraries/Flexi_auth_lite.php",
+					"settings":
+					{
+						"buffer_size": 23208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6542,
+								6628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2447.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/models/flexi_auth_model.php",
+					"settings":
+					{
+						"buffer_size": 78036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/views/home.php",
+					"settings":
+					{
+						"buffer_size": 9334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6859,
+								6859
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1755.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/users/forgot_password.php",
+					"settings":
+					{
+						"buffer_size": 693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/views/users/account_update_view.php",
+					"settings":
+					{
+						"buffer_size": 1814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								618,
+								618
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/MIRIAM/Downloads/regalsGeeks.sql",
+					"settings":
+					{
+						"buffer_size": 547296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/controllers/auth_lite.php",
+					"settings":
+					{
+						"buffer_size": 3092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1138,
+								1138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -450,6 +774,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"flexi_auth",
+				"application/libraries/Flexi_auth_lite.php"
+			],
+			[
+				"flexi_auth_lite",
+				"application/models/flexi_auth_lite_model.php"
+			],
+			[
+				"passwordhash",
+				"application/libraries/phpass/PasswordHash.php"
+			],
+			[
+				"flexi_auth_lite_model",
+				"application/models/flexi_auth_lite_model.php"
+			],
+			[
+				"flexi_auth_model",
+				"application/models/flexi_auth_model.php"
+			],
+			[
+				"flexi_ah",
+				"application/libraries/Flexi_auth.php"
+			],
 			[
 				"usersregister",
 				"Web_Globeshake/application/views/users/register.php"
@@ -515,10 +863,6 @@
 				"Web_Globeshake/application/views/includes/email/activate_account.tpl.php"
 			],
 			[
-				"flexi_auth_model",
-				"Web_Globeshake/application/models/flexi_auth_model.php"
-			],
-			[
 				"flexi",
 				"Web_Globeshake/application/libraries/Flexi_auth.php"
 			],
@@ -549,10 +893,6 @@
 			[
 				"ento",
 				"Web_Globeshake/floren/entorno.html"
-			],
-			[
-				"flexi_auth",
-				"Web_Globeshake/application/libraries/Flexi_auth.php"
 			],
 			[
 				"register",

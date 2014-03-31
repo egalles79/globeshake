@@ -2,10 +2,10 @@
 	
 	<form action="<?php echo base_url()."auth";?>">
 		<div class="rsitya_inicdc recupcondo_box recupconcinc_box">
-			<div class="rsitya_dircc recupcondo_entr recupconcinc_hrco">Has restablecido tu contraseña con éxito.</div>
+			<div class="rsitya_dircc recupcondo_entr recupconcinc_hrco"><?=lang('password_change_successful');?></div>
 			
 			<button type="submit" id="rsitya_botonreg" class="recupcondo_bot">
-				<span>Continuar</span>
+				<span><?=lang('user_continuar');?></span>
 			</button>
 
 		</div>  

@@ -15,18 +15,19 @@
 * Requirements: PHP5 or above and Codeigniter 2.0+
 */
 //Field names
-$lang['user_name']									= 'Nombre';
-$lang['user_surname']								= 'Apellidos';
-$lang['user_email']									= 'Correo electrónico';
+$lang['user_name']									= 'Name';
+$lang['user_surname']								= 'Surname';
+$lang['user_email']									= 'Email';
 $lang['user_country']								= 'País de ubicación';
-$lang['user_password']								= 'Contraseña';
-$lang['user_password_confirm']						= 'Confirmar contraseña';
-$lang['user_register_btn']							= 'Regístrese';
-$lang['user_send'] 									= 'Enviar';
-$lang['user_password_new']							= 'Nueva contraseña';
-$lang['user_password_new_repeat']					= 'Repetir nueva contraseña';
+$lang['user_password']								= 'Password';
+$lang['user_password_confirm']						= 'Confirm password';
+$lang['user_register_btn']							= 'Register';
+$lang['user_send'] 									= 'Send';
+$lang['user_password_new']							= 'New password';
+$lang['user_password_new_repeat']					= 'Repeat new password';
 $lang['user_password_change']						= 'Restablecer contraseña';
-$lang['user_remember']								= 'Recordar la contraseña';
+$lang['user_remember']								= 'Remember password';
+$lang['user_continuar']								= 'Continue';
 
 // Account Creation
 $lang['account_creation_successful']				= 'Your account has successfully been created.';
@@ -45,7 +46,7 @@ $lang['password_token_invalid']  					= 'Your submitted password token is invali
 $lang['email_new_password_successful']				= 'A new password has been emailed to you.';
 $lang['email_forgot_password_successful']	 		= 'An email has been sent to reset your password.';
 $lang['email_forgot_password_unsuccessful']  		= 'Unable to reset password.'; 
-$lang['email_forgot_password_content']  			= 'Por favor, verifique su email para reestablecer su contraseña'; 
+$lang['email_forgot_password_content']  			= 'Por favor, verifique su email para restablecer su contraseña'; 
 $lang['password_forgotten']							= 'He olvidado la contraseña';
 $lang['password_change_title']						= 'Restablezca su contraseña. Es fácil.';
 $lang['password_change_email']						= 'Introduzca su dirección de correo electrónico para obtener instrucciones';

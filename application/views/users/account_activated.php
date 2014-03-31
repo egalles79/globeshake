@@ -5,7 +5,7 @@
 			<div class="rsitya_dircc recupcondo_entr recupconcinc_hrco"><?=lang('activate_successful');?></div>
 			
 			<button type="submit" id="rsitya_botonreg" class="recupcondo_bot">
-				<span>Continuar</span>
+				<span><?=lang('user_continuar');?></span>
 			</button>
 
 		</div>  

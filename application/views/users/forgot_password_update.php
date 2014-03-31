@@ -18,7 +18,7 @@
 					<div class="rsitya_contras recupconcuatr_vol"><?=lang('user_password_new_repeat');?></div>
 					<input type="password" id="confirm_new_password" name="confirm_new_password" value=""/>
 					
-					<input type="submit" name="change_forgotten_password" id="submit" value="<?=lang('user_password_change');?>" class="link_button large"/>
+					<input type="submit" name="change_forgotten_password" id="submit" value="<?=lang('user_password_change');?>" class="link_button large restacontr"/>
 					
 				</div>  
 			<?php echo form_close();?>
