@@ -5017,9 +5017,11 @@ a.notification-close {
 ----------------------------------------------------------------------*/
 #footer {
 	background: none repeat scroll 0 0 #47789F;
-	padding: 50px 0 0;
+	/*padding: 50px 0 0;*/
 	color: #bfbfbf;
 	border-bottom: 5px solid #101010;
+	height: 78px!important;
+	margin-top: 22% !important;
 }
 #footer hr {
 	background: #0C0C0C;
@@ -5032,7 +5034,7 @@ a.notification-close {
 }
 .footer-last {
 	padding: 20px 0 !important;
-	width: 89%;
+	width: 1200px !important;
 }
 .copyright {
 	float: left;
@@ -8006,7 +8008,7 @@ border-top:none;
 /*del container, de el id="frame"*/
 .framcont {
 	position:inherit;
-	height:109em;
+	/*height:109em;*/
 }
 
 .partbocont {
@@ -8328,7 +8330,7 @@ clear: both;
 -moz-border-radius: 6px !important;
 -webkit-border-radius: 6px !important;
 	height: 1.7em;
-	margin-left:6px;
+	margin-left:14px;
 
 }
 #rsitya_botonreg:hover {
@@ -8390,17 +8392,30 @@ clear: both;
     padding-top: 2%;
 }
 /*Aquí comienza Registro/ Pantalla "recuperar contraseña 04"*/
-.recupconcuatr_cont {
+/*.recupconcuatr_cont {
 	height: 20em;
 	
-}
+}*/
 .recupconcuatr_bot {
 	width:33%;
 	
 }
 .recupconcuatr_int, .recupconcuatr_vol {
 	color: #47789F;
+	 font-size: 1.3em;
+	 width: 42%;
 }
+#new_password {
+	float: right !important;
+    margin-right: 4.5% !important;
+    width: 48%;
+		
+	}
+	#confirm_new_password {
+	 float: right !important;
+    margin-right: 4.5% !important;
+    width: 48%;
+	}
 .recupconcuatr_inun, .recupconcuatr_inun {
 	margin-top:.5%;
 	

@@ -1,6 +1,15 @@
 /* #Tablet (Landscape)
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
+	#confirm_new_password {
+float: right !important;
+margin-right: 4% !important;
+}
+	#new_password {
+		  float: right !important;
+    margin-right: 4% !important;
+		
+	}
 	#submit.reheol {
     font-size: 1.2em !important;
 }

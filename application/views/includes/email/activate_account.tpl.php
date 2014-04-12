@@ -35,7 +35,7 @@ $link = base_url().'auth/activate_account/'. $user_id .'/'. $activation_token;
    
   </tr>
   <tr>
- <td style="font-size: 16px; margin-bottom: 16px; margin-left: 20px; margin-top: 14px; height:30px; color:#666666; padding-left:12px; ">
+ <td style="font-size: 16px; margin-bottom: 16px; margin-left: 20px; margin-top: 14px; height:30px; color:#666666; padding:12px; width:100% ">
  	<a style="font-size: 14px; background:#6FA4CE; color:#FFF; text-decoration:none; padding:5px; " href="<?php echo $link;?>">Verifica tu dirección de correo electrónico</a>
  </td>
     </tr>
