@@ -1185,5 +1185,13 @@ class Flexi_auth extends Flexi_auth_lite
 		}
 		
 		$this->CI->auth->template_data = $data;
-	}	
+	}
+	/**
+	* profile_is_completed
+	* Verifies if I can do any actions if my profile is completed	
+	**/
+	public function profile_is_completed()
+	{
+		return $this->CI->flexi_auth_model->profile_is_completed();
+	}
 }

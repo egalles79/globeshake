@@ -278,4 +278,43 @@ class Auth_public extends controlador {
         
         $this->load->view('demo/public_examples/address_update_view', $this->data);     
     }
+
+
+
+    /**
+    * buy_visit_card()
+    * Función para comprar tarjetas de visitas. Debe comprobar que el usuario tenga un porcentage
+    * de perfil completado mínimo para proceder a comprar tarjetas de visitas.
+    */
+    function buy_visit_card()
+    {
+        $user_id = $this->flexi_auth->get_user_id();
+        if ($this->flexi_auth_model->profile_is_completed($user_id)) {
+            $this->buy_visit_card_ok();
+        } else {
+            $this->update_visit_card();
+        }        
+    }
+
+    function buy_visit_card_ok() {
+        $data = $this->load_page();
+        $data['main_template']  = 'users/buy_visit_card';
+        $data['title'] = '';
+        $data['description'] = '';
+        $this->load->view('main_template', $data); 
+
+    }
+    /**
+    * update_visit_card()
+    * Función para completar la tarjeta de visita.
+    */
+    function update_visit_card()
+    {
+        $data = $this->load_page();
+        $data['main_template']  = 'users/update_visit_card';
+        $data['title'] = '';
+        $data['description'] = '';
+        $this->load->view('main_template', $data); 
+    }
+
 }

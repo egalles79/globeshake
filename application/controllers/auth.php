@@ -49,7 +49,7 @@ class Auth extends controlador {
             }
             else
             {
-                redirect('auth_public/dashboard');
+                //redirect('auth_public/dashboard');
             }
         }
         
@@ -486,5 +486,10 @@ class Auth extends controlador {
         $this->session->set_flashdata('message', $this->flexi_auth->get_messages());        
         
         $this->redirect('auth');
-    }   
+    }  
+
+
+    
+
+
 }

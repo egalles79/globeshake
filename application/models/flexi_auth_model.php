@@ -892,6 +892,7 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			$datos['name'] = $row->upro_first_name;
 			$datos['surname'] = $row->upro_last_name;
 			$datos['country'] = $row->upro_country;
+			$datos['profile_completed'] = $row->upro_profile_completed;
 			return $datos;
 		}
 		else {
@@ -2472,7 +2473,48 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 		set_cookie($ci_session);	
 	}
 
+	public function profile_is_completed($user_id) {
+		// Check if the profile is completed for buy or more actions	
 
+
+		$this->db->select('upro_profile_completed');
+		$this->db->from('user_profiles');
+		$this->db->where('upro_id', $user_id);
+
+
+		$query = $this->db->get();
+	    
+	    if ($query->num_rows() > 0) {
+			$row = $query->row();
+			$Porcentaje = $row->upro_profile_completed;
+			if ($Porcentaje >= $this->auth->auth_settings['percentage_profile'])
+				return true;
+			else
+				return false;
+		}
+		else {
+			return false;
+		}
+
+
+		/*var_dump($this->auth->tbl_custom_data).die;
+		$sql_select = array(			
+			$this->auth->tbl_custom_data['upro_first_name']);
+		
+		$sql_where = array($this->auth->tbl_col_user_account['id'] => $user_id);
+		$this->flexi_auth_lite_model->set_custom_sql_to_db();
+		$query = $this->db->select($sql_select)
+			->where($sql_where)
+			->get($this->auth->tbl_custom_data);
+
+		if ($query->num_rows() == 1)
+	    {
+			$user = $query->row();
+		}
+		print_r($query).die;
+		return $query->num_rows() > 0;
+		*/
+	} 
 	public function automatic_login($user_id, $remember_user) {
 
 		$sql_select = array(

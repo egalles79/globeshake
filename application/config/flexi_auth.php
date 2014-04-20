@@ -185,7 +185,7 @@
 	$config['database']['custom']['user_profile']['foreign_key'] = 'upro_uacc_fk';
 	$config['database']['custom']['user_profile']['join'] = 'user_profiles.upro_uacc_fk';
 	$config['database']['custom']['user_profile']['custom_columns'] = array(
-		'upro_first_name','upro_last_name','upro_phone','upro_newsletter','upro_country'
+		'upro_first_name','upro_last_name','upro_phone','upro_newsletter','upro_country','upro_profile_completed'
 	);
 
 	###+++++++++++++++++++++++++++###
@@ -617,6 +617,15 @@
      * Options: array('user','group'), array('user'), array('group')
      */
     $config['settings']['privilege_sources'] = array('user','group');
+
+    /**
+     * Define el porcentaje mínimo de perfil de usuario completo para poder comprar tarjetas de visita.
+     * @param int
+     * 
+     * Options: 80 --> 80%
+     */
+    $config['settings']['percentage_profile'] = 80;
+
 
 	
 	###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###	

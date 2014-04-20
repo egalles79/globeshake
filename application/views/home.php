@@ -1,103 +1,3 @@
-
-    	<div class="recuadrctv ctvist clearfix">    
-    		<div class="nombre clearfix">
-				<a class="ctvisitent" href="#">Comprar tarjetas visita</a>
-			</div>
-            <!-- Inicio ficha persona-->
-            <div class="nombre clearfix">            
-            	<!-- Inicio recuadro blanco-->
-            	<div class="grid_10 recblan">
-            		<div class="fotoctvent">
-            			<img src="http://www.globeshake.com/test/images/ctvprueba.jpg" alt="Usuario" title="Usuario">
-            		</div>
-           				<!-- Inicio datos personal-->
-       				<div class="dperso">
-			            <span class="deriv">Nombre</span>
-			            <span class="deriv pintcon"><?php echo $datos['name'];?></span>
-			            <span class="deriva">Apellidos</span>
-			            <span class="deriv pintconap"><?php echo $datos['surname'];?></span>
-			            <span class="derive">Empresa</span>
-			            <span class="deriv pintconem"><-- No disponible --></span>
-        			</div>
-        			<!-- Fin datos personal-->
-		            <div class="grid_3 grey-line suent tpccpont">
-		              	<a class="tipocccontr" href="#">Tipo de cuenta <p class="cont_cont">Continental</p></a>
-		            </div>
-		            <div class="grid_3 grey-line suent tpccponttres mas">
-		            	<a href="#">Subir de categoría</a>
-		            </div>
-		            <div class="grid_3 grey-line suent tpccponttres">
-		            	<a href="#"><img src="http://www.globeshake.com/test/images/imag_tarjetprueb.png" alt="Tarjetas"></a>
-		            </div>
-		            <div class="grid_3 grey-line suent tpccpontcuat">
-		            	<a href="#">Mis contactos</a>
-		            </div>
-		            <div class="grid_3 grey-line suent tpccpontcin">
-		            	<a href="#">Acciones pendientes / Buzón</a>
-		            </div>
-		            <div class="grid_3 grey-line suent tpccpontseis">
-		            	<a href="#">Proyectos potenciales</a>
-		            </div>
-            	</div>
-            <!-- Fin ficha persona-->            
-            </div>
-            <!-- Final recuadro blanco-->
-    	</div>        
-    <!-- Final columna de la izdad del logo -->
-	</section>
-            
-            
-    <!-- Inicio de la navegación -->
-	<nav>        
-        <div class="grid_10">        
-        	<!-- Inicio de frase Ponga a su empresa....-->
-        	<div class="grid_10 pasempr">Ponga a su empresa en el mapa / Construcción, Ingeniería, Arquitectura</div>
-        	<!-- Fin de frase Ponga a su empresa....-->
-	            <div class="grid_10 botopri">
-					<ul class="tabs añadidcont" data-gen="flipInY">
-						<li class="aprueba"><a href="#" class="active selectedb">Mi empresa</a></li>
-						<li><a href="#" class="selectedc">Mi perfil profesional</a></li>
-					</ul>
-				</div>
-            </div>           
-	</nav> <!-- Final de la navegación --> 
-          
-    <section><!-- Principio del mapa -->
-		<div class="princbotones">
-			<ul class="sf-menu colorsubconttootorre">
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Dar a conocer mi empresa</a>
-					<ul>
-						<li><a href="index2-revolution.html">Crear CV</a></li>
-						<li><a href="index3-nivo.html">Resumen CV Empresa</a></li>	
-                        <li><a href="index3-nivo.html">Enviar Candidatura Empresa</a></li>	
-            		</ul>
-				</li>
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Control de inteligencia</a>
-					<ul>
-						<li><a href="index2-revolution.html">Listas Internas</a></li>
-						<li><a href="index3-nivo.html">Crear Lista</a></li>	
-                        <li><a href="index3-nivo.html">Mis Listas</a></li>	
-					</ul>
-				</li>
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Control licitaciones</a>
-					<ul>
-						<li><a href="index2-revolution.html">Publicar Licitación</a></li>
-						<li><a href="index3-nivo.html">Petición oferta</a></li>
-                        <li><a href="index3-nivo.html">Filtrar Licitaciones</a></li>
-                        <li><a href="index3-nivo.html">Market Survey</a></li>			
-					</ul>
-				</li>
-			</ul><!-- end menu -->
-			<div class="grid_2 search partbocont">
-				<form action="search.html" id="search" method="get">
-					<input id="inputhead" name="search" type="text" onfocus="if (this.value=='Start Searching...') this.value = '';" onblur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ..." />
-					<button type="submit">
-						<i class="icon-search"></i>
-					</button>
-				</form><!-- end form -->
-			</div><!-- search -->
-	<!--Fin de la botonera -->
-			<div class="fullwidthbanner-container">	
          
         <!-- mapa mundi google maps -->
 				<iframe width="869" height="510" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/?ie=UTF8&amp;t=m&amp;ll=41.508577,1.757813&amp;spn=119.416058,303.398438&amp;z=2&amp;output=embed"></iframe>
@@ -130,10 +30,10 @@
 					<p>ÚLTIMOS USUARIOS CONECTADOS:</p>
 				</div>
 				<div class="grid_2 botonsecconttresult">
-					<p><img class="fll ultcontt" alt="#" src="http://www.globeshake.com/test/images/imag_prueba.jpg"></p>
-					<p><img class="fll ultcontt" alt="#" src="http://www.globeshake.com/test/images/imag_prueba.jpg"></p>
-					<p><img class="fll ultcontt" alt="#" src="http://www.globeshake.com/test/images/imag_prueba.jpg"></p>
-					<p><img class="fll ultcontt" alt="#" src="http://www.globeshake.com/test/images/imag_prueba.jpg"></p>
+					<p><img class="fll ultcontt" alt="#" src="<?php echo IMAGES_URL;?>imag_prueba.jpg"></p>
+					<p><img class="fll ultcontt" alt="#" src="<?php echo IMAGES_URL;?>imag_prueba.jpg"></p>
+					<p><img class="fll ultcontt" alt="#" src="<?php echo IMAGES_URL;?>imag_prueba.jpg"></p>
+					<p><img class="fll ultcontt" alt="#" src="<?php echo IMAGES_URL;?>imag_prueba.jpg"></p>
 				</div>
 			</div>
 		</div><!-- final row-->
@@ -154,19 +54,19 @@
 
 				<ul class="tabs-content borcontab grirectabscondos">
                 
-					<li id="t-1" class="active vaycontuno"><img src="http://www.globeshake.com/test/images/imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
+					<li id="t-1" class="active vaycontuno"><img src="<?php echo IMAGES_URL;?>imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
                     Cargo, empresa, proyecto de unión
                     Lorem ipsum con proyectos
 					</li><!-- tab content -->
                    
                     
-                    <li id="t-2" class="active vaycontdos"><img src="http://www.globeshake.com/test/images/imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
+                    <li id="t-2" class="active vaycontdos"><img src="<?php echo IMAGES_URL;?>imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
                     Cargo, empresa, proyecto de unión
                     Lorem ipsum con proyectos
 					</li><!-- tab content -->
                     
                     
-                    <li id="t-3" class="active vayconttres"><img src="http://www.globeshake.com/test/images/imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
+                    <li id="t-3" class="active vayconttres"><img src="<?php echo IMAGES_URL;?>imag_prueba.jpg" class="fll altcont" alt="#"><p class="colrento">"Nombre del proyecto" en EEUU</p>
                     Cargo, empresa, proyecto de unión
                     Lorem ipsum con proyectos
 					</li><!-- tab content -->
