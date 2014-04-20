@@ -292,7 +292,7 @@ class Auth_public extends controlador {
         if ($this->flexi_auth_model->profile_is_completed($user_id)) {
             $this->buy_visit_card_ok();
         } else {
-            $this->update_visit_card();
+           redirect('auth_public/update_visit_card');
         }        
     }
 
@@ -310,6 +310,7 @@ class Auth_public extends controlador {
     */
     function update_visit_card()
     {
+        
         $data = $this->load_page();
         $data['main_template']  = 'users/update_visit_card';
         $data['title'] = '';

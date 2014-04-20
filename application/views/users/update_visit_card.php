@@ -77,14 +77,11 @@
 							<span>Aceptar</span>
 						</button>
 					</div>
-				</div>
+				
 			</form>
 		</div>
 	</div>
 </div>
-
-
-
      
         <!-- mapa mundi google maps -->
 <iframe width="869" height="510" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/?ie=UTF8&amp;t=m&amp;ll=41.508577,1.757813&amp;spn=119.416058,303.398438&amp;z=2&amp;output=embed"></iframe><br /><small><a href="https://maps.google.es/?ie=UTF8&amp;t=m&amp;ll=41.508577,1.757813&amp;spn=119.416058,303.398438&amp;z=2&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>

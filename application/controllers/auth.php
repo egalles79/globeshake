@@ -49,7 +49,7 @@ class Auth extends controlador {
             }
             else
             {
-                //redirect('auth_public/dashboard');
+                redirect('auth_public/dashboard');
             }
         }
         
