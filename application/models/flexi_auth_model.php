@@ -880,11 +880,13 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 		
 		$this->db->select('*');
 		$this->db->from('user_profiles');
-		$this->db->where('upro_uacc_fk', $user_id);
+		$this->db->join('user_accounts', 'user_accounts.uacc_id = user_profiles.upro_uacc_fk');
+		$this->db->where('user_accounts.uacc_id', $user_id);
 
 		
 
 	    $query = $this->db->get();
+	    
 	    
 	    if ($query->num_rows() > 0) {
 			$row = $query->row();
@@ -892,7 +894,9 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			$datos['name'] = $row->upro_first_name;
 			$datos['surname'] = $row->upro_last_name;
 			$datos['country'] = $row->upro_country;
+			$datos['sector'] = $row->upro_sector;
 			$datos['profile_completed'] = $row->upro_profile_completed;
+			$datos['email'] = $row->uacc_email;
 			return $datos;
 		}
 		else {
@@ -2488,12 +2492,12 @@ class Flexi_auth_model extends Flexi_auth_lite_model
 			$row = $query->row();
 			$Porcentaje = $row->upro_profile_completed;
 			if ($Porcentaje >= $this->auth->auth_settings['percentage_profile'])
-				return true;
+				return 100;
 			else
-				return false;
+				return $Porcentaje;
 		}
 		else {
-			return false;
+			return 0;
 		}
 
 

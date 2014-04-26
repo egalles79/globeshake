@@ -1,54 +1,16 @@
 /* #Tablet (Landscape)
 ----------------------------------------------------------------------*/
 @media only screen and (min-width: 959px) and (max-width: 1280px) {
-	#submit.reheol {
-    font-size: 1.2em !important;
-}
-	.hregistr_subtit {
-    width: 66% !important;
-}
-#hregistr_botonreg, #submit {
-    font-size: 1.2em !important;
-}
-	.rsitya_inic {
-    clear: both;
-    color: #47789F;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 2em;
-    width: 71%;
-}
-	#window_area .header_window {
-    font-size: 1.3em;
-}
-	#window_area .login.active {
-    font-size: 1.3em;
-}
-
-	.rsitya_dircc {
-    float: left;
-    font-size: 1.1em;
-    margin-left: 12px;
-	 margin-bottom: 5px;
-}
-.rsitya_holv {
-    font-size: 0.8em;
-}
-.rsitya_contras {
-    font-size: 1.1em;
-    margin-left: 12px;
-}
 	#hregistr_nom, #first_name {
-    margin-bottom: 3px !important;
     margin-right: 1px;
-	  height: 1em;
 }
 	.botonsalirent {
     margin-left: 20%;
 }
 	.hregistr_mapamunduno {
     font-size: 0.8em !important;
-    margin-top: 8%;
-    width: 52% !important;
+     margin-top: 10%;
+    width: 51% !important;
 }
 	.hregistr_mapamund img {
 	margin-left: 14%;
@@ -56,28 +18,23 @@
     width: 58% !important;
 	}
 	.hregistr_subtitemp {
-     float: left;
-    font-size: 1.5em;
-    width: 67%;
+    float: left;
+    font-size: 1.2em;
+    width: 56%;
 }
 	.hregistr_tarjetavisdos {
-    height: 14.4em;
-    padding-top: 7px !important;
-    width: 86%;
+    height: 13.8em;
+	padding-top: 7px !important;
+    width: 87%;
 }
 .hregistr_tarjetavis {
    height: 13.8em;
-    margin-top: 4%;
     width: 88%;
 }
 	#hregistr_botonreg, #submit {
-   clear: both;
-    float: left;
-    font-size: 1.2em;
+    font-size: 1.5em;
     height: 23px;
-    margin-left: 35% !important;
-    margin-top: 5px !important;
-    width: 32% !important;
+	 margin-top: 5px !important;
 }
 	.hregistr_lgris img{
 		  width: 35%;
@@ -87,21 +44,17 @@
 	 margin-bottom: 3px !important;
 }
 #hregistr_apel, #last_name  {
-    height: 1em;
-     margin-bottom: -15px !important;
+    height: 0.9em;
+    margin-bottom: 3px !important;
 }
 #hregistr_correo, #email_address {
-     height: 1em;
-    margin-bottom: 3px !important;
-    margin-right: 2px !important;
-    margin-top: 0 !important;
-    width: 45%;
+    height: 0.9em;
+	margin-bottom: 3px !important;
+	 margin-right: 1px;
 }
 #hregistr_pais, #country {
-    height: 1.7em;
-    margin-bottom: 3px !important;
-    padding: 0;
-    width: 49.6%;
+    height: 0.9em;
+	margin-bottom: 3px !important;
 }
 #hregistr_contr, #password {
 	height: 0.9em;
@@ -113,15 +66,15 @@
 	   margin-bottom: 3px !important;
 }
 	.hregistr_tarjetavistres {
+   height: 14em;
    padding-top: 7px !important;
     width: 86%;
-	height: 14.3em;
 }
 	.hregistr_sub {
     font-size: 1.4em;
 }
 	.hregistr_tit {
-     font-size: 1.8em;
+    font-size: 1.7em;
 }
 	.hregistr_com {
     margin-left: 7%;

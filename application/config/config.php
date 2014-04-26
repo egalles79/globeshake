@@ -15,7 +15,7 @@
 |
 */
 
-
+date_default_timezone_set('UTC');
 //CONFIGURACIÓ LOCAL
 $config['base_url']	= 'http://globeshake.site/';
 

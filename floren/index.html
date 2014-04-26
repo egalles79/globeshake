@@ -100,38 +100,10 @@
 						
 					</ul><!-- end menu -->
 				</nav><!-- end nav -->
-				<div id="window_area">
-					<a id="show_header_window">
-						<div class="login">Entrar</div>
-					</a>
-					<div class="header_window" align="left" style="display: none;">
-
-
-						<form action="#" class="parallel" method="post" accept-charset="utf-8">  
-							
-								<div class="rsitya_dircc">Email</div>
-								<input type="text" id="identity" name="login_identity">
-								<div class="rsitya_contras">Contraseña</div>
-								<input type="password" id="password" name="login_password" class="rsitya_con"> 
-								<div class="rsitya_holv">						
-										<input type="checkbox" id="remember_me" name="remember_me" value="1">&nbsp;Recuerdame								</div>
-								<div class="rsitya_holv">
-									<a href="http://globeshake.site/auth/forgotten_password">He olvidado mi contraseña</a>
-								</div>
-								<div class="rsitya_holv">
-									<a href="http://globeshake.site/auth/resend_activation_token">Reenviar clave de activación</a>
-								</div>
-								
-								<button type="submit" name="login_user" id="rsitya_botonreg" class="grid_3">
-									<span>Inicia sesión</span>
-								</button>
-
-							
-						</form>
-										
-					</div>			
+				<div class="grid_1 botonsalirent">
+					<a class="tbutton flr large color4 masct salir entrarregist" href="#">Entrar</a>
 				</div>
-				
+
 
 				<div class="social social-head">
 					<a href="#" title="Facebook"><i class="icon-facebook"></i></a>
@@ -252,20 +224,20 @@
 
 
 <div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
-
 <!-- Scripts -->
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/rs-plugin/pluginsources/jquery.themepunch.plugins.min.js"></script>	
 <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/theme20.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="js/jquery.knob.js"></script>
 <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/gmap3.js"></script>
 <script type="text/javascript" src="js/twitter/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript">	
 /* <![CDATA[ */
 var tpj=jQuery;
@@ -289,12 +261,6 @@ tpj(document).ready(function() {
 		navOffsetHorizontal:0,
 		navOffsetVertical:20,
 		shadow:0
-	});
-	$('#window_area .login').click(function(){
-		if($(this).hasClass('active')) $('.header_window').hide();
-		else $('.header_window').show(100);
-		
-		$(this).toggleClass('active');
 	});
 });
 /* ]]> */

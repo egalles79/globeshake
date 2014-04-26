@@ -28,7 +28,10 @@ class controlador extends CI_Controller
 
         $data['logged'] = $this->flexi_auth->is_logged_in();
         $data['email'] = $this->flexi_auth->get_user_identity();
-        $data['datos'] = $this->flexi_auth->get_data($this->flexi_auth->get_user_id());
+        $data['user'] = $this->flexi_auth->get_data($this->flexi_auth->get_user_id());
+
+        //$data['user'] = $this->flexi_auth->get_user_by_identity_row_array();
+        
 /*
         $this->load->library('session');
         

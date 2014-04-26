@@ -41,6 +41,7 @@
 	<script type="text/javascript" src="<?php echo JS_URL;?>twitter/jquery.tweet.js"></script>
 	<script type="text/javascript" src="<?php echo JS_URL;?>custom.js"></script>
 
+
 	<script type="text/javascript">	
 	/* <![CDATA[ */
 		var tpj=jQuery;
@@ -73,7 +74,7 @@
     $( "#country" ).autocomplete({
       source: availableTags
     });
-    $( "#message" ).dialog({
+    /*$( "#message" ).dialog({
       title: 'Mensaje del sistema',
       modal: true,
       buttons: {
@@ -81,7 +82,24 @@
           $( this ).dialog( "close" );
         }
       }
-    });
+    });*/
+
+	$( "#message" ).dialog(
+		{ 
+			modal: true,
+			width: 540,
+			buttons: 
+			[ 
+				{ 
+					text: "Aceptar", 
+					click: function() 
+					{ 
+						$( this ).dialog( "close" ); 
+					} 
+				} 
+			] 
+		});
+
   	$('#window_area .login').click(function(){
 		if($(this).hasClass('active')) $('.header_window').hide();
 		else $('.header_window').show(100);

@@ -18,13 +18,13 @@ $idioma = $this->lang->lang();
 <meta name="robots" content="all">
 
 <link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>bootstrap/css/bootstrap.min.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>styles/icons.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>styles/animate.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?php echo JS_URL;?>rs-plugin/css/settings.css" media="screen" /><!-- Revolution Slider -->
 <link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>styles/responsive.css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>jquery/jquery-ui-1.10.4.custom.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="<?php echo LAYOUT_URL;?>style.css" media="screen" />
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="<?php echo IMAGES_URL;?>favicon.ico">
@@ -83,10 +83,10 @@ $idioma = $this->lang->lang();
 						<div class="login">
 						<?php
 						if ($logged) {
-							if (strlen($datos['complet_name']) > 25) {
-								echo substr($datos['complet_name'],0,25).'...';	
+							if (strlen($user['complet_name']) > 25) {
+								echo substr($user['complet_name'],0,25).'...';	
 							} else {
-								echo $datos['complet_name'];
+								echo $user['complet_name'];
 							}							
 						} else {
 							echo "Entrar";

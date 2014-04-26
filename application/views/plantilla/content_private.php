@@ -21,9 +21,9 @@
            				<!-- Inicio datos personal-->
        				<div class="dperso">
 			            <span class="deriv">Nombre</span>
-			            <span class="deriv pintcon"><?php echo $datos['name'];?></span>
+			            <span class="deriv pintcon"><?php echo $user['name'];?></span>
 			            <span class="deriva">Apellidos</span>
-			            <span class="deriv pintconap"><?php echo $datos['surname'];?></span>
+			            <span class="deriv pintconap"><?php echo $user['surname'];?></span>
 			            <span class="derive">Empresa</span>
 			            <span class="deriv pintconem"><-- No disponible --></span>
         			</div>

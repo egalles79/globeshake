@@ -80,7 +80,7 @@ img {
 	max-width: 100%
 }
 a {
-	 color: #6A97BA;
+	color: #000;
 	text-decoration: none !important;
 	-webkit-transition: color 0.1s ease-in-out;
 	transition: color 0.1s ease-in-out
@@ -823,9 +823,9 @@ body[class^="frame_"] div.frame_10 { background: url(images/frames/10.png) repea
 .headdown {
 	background: #47789f;
 	color: #fff;
-	-webkit-box-shadow: -1px 5px 8px 0 #ADADAD;
-   -moz-box-shadow: -1px 5px 8px 0 #ADADAD;
-   box-shadow: -1px 5px 8px 0 #ADADAD;
+	-webkit-box-shadow: 7px 4px 6px -3px #333333;
+   -moz-box-shadow: 7px 4px 6px -3px #333333;
+   box-shadow: 7px 4px 6px -3px #333333;
 }
 .headdown .social-head {
 	float: right;
@@ -843,7 +843,7 @@ body[class^="frame_"] div.frame_10 { background: url(images/frames/10.png) repea
 	border: 1px solid #000
 }
 .headdown .social a i {
-	background-color: #DDC079;
+	 background-color: #9f9866;
 	padding: 7px 0
 }
 
@@ -7519,7 +7519,7 @@ li .selectedc {
     margin-top: 12px;
     padding: 1em 13em 1em 8em;
     position: absolute !important;
-    z-index: 0;
+    z-index: 2000;
 	border: 1px solid #ADADAD !important;
 	border-bottom:none !important;
 	 color: #255B7F !important;
@@ -7608,9 +7608,7 @@ border-top:none;
    box-shadow: 0 -6px 5px -3px #333333;
    height: 58em;
    margin-top: 5px;
-   width: 82%;
-   position:relative;
-   z-index:0;
+   width: 82%
 	
 	
 }
@@ -7788,7 +7786,6 @@ border-top:none;
 	margin-left: 0 !important;
     padding-left: 0 !important;
     width: 102%;
-	z-index: 1;
 }
 /*Subbotonera*/
 .colorsubconttoo {
@@ -7798,7 +7795,7 @@ border-top:none;
 .colorsubconttootorre {
 	margin-left:2px;
 	font-size: 1em;
-	 z-index: 1;	
+	
 }
 
 .subentorop {
@@ -7988,10 +7985,9 @@ border-top:none;
 .dtketicont {
 	height: 9em !important;
      margin-top: 25px;
-    position: relative;
+    position: absolute;
     top: 85% !important;
     width: 100%;
-	z-index:3;
 }
 
 .otro {
@@ -8167,9 +8163,9 @@ border-top:none;
 }
 #hregistr_pais, #country {
 	float:left;
-	width: 48%;
+	width: 45%;
 }
-.hregistr_contr {
+#hregistr_contr, #password {
 	float:left;
 	width: 45%;
 	margin-right: 7px;
@@ -8179,36 +8175,18 @@ border-top:none;
 	width: 45%;
 }
 #hregistr_botonreg,  #submit {
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	background: #f78d1d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ddc079), to(#c5a653));
-    background: -moz-linear-gradient(top,  #ddc079,  #c5a653);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddc079', endColorstr='#c5a653');
-	background-color: #C2A34E;
+	background-color: #988B68;
     border: medium none;
     color: #FFFFFF;
-     margin-left: 32% !important;
-    margin-top: 2% !important;
-    width: 34% !important;
+    height: 33px;
+    margin-left: 25%;
+    margin-top: 8px;
+    width: 50%;
 	border-radius: 4px;
 -moz-border-radius: 4px;
 -webkit-border-radius: 4px;
-font-size: 2em !important;
+font-size: 2em;
 	
-}
-
-#hregistr_botonreg,  #submit:hover {
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	background: #f78d1d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c5a653), to(#ddc079));
-    background: -moz-linear-gradient(top,  #c5a653,  #ddc079);
-	background-color: #C2A34E;
 }
 .hregistr_filgris {
 	border: 1px solid #999999;
@@ -8249,11 +8227,10 @@ color: #988B68;
    -moz-box-shadow: 7px 4px 6px -3px #adadad;
    box-shadow: 7px 4px 6px -3px #adadad;
   float: left;
-    /*height: 14em;*/
+    height: 11em;
     margin-top: 2%;
     padding: 3% 0;
     width: 79%;
-	font-size: 1.3em;
 }
 
 .rsitya_todobloq {
@@ -8266,57 +8243,42 @@ color: #988B68;
 	
 }
 .rsitya_dircc {
-	  float: left;
-    font-size: 1.7em;
-    margin-bottom: 4px;
-    margin-left: 15px;
-    text-align: left;
-}
-.rsitya_contras {
-    clear: both;
-    float: left;
-    font-size: 1.7em;
-    margin-bottom: 3px;
-    margin-left: 12px;
+	float: left;
+    font-size: 1.3em;
     margin-top: 1%;
-    text-align: left;
+    text-align: right;
     width: 46%;
 }
-.rsitya_holv {
-    clear: both;
-    color: #7A7A7A;
+.rsitya_contras {
+	clear: both;
     float: left;
-    font-size: 1em;
-    margin-left: 3%;
+    font-size: 1.3em;
+    margin-top: 1%;
+    text-align: right;
+    width: 46%;
+	
 }
-#rsitya_di, #identity {
+.rsitya_holv {
+	 float: right;
+    font-size: 1em;
+    width: 72%;
+	color: #7A7A7A;
+}
+#rsitya_di {
       float: left;
     margin-left: 2%;
     margin-right: 3%;
-    width: 83%;
+    width: 46%;
 }
-.rsitya_con {
+#rsitya_con {
      float: left;
     margin-bottom: 3px;
     margin-left: 2%;
     margin-right: 3%;
-    width: 83%;
-}
-#rsitya_botonreg.grid_3_modal {
-	 margin-left: 3px;
-    width: 40%;
+    width: 46%;
 }
 #rsitya_botonreg {
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	background: #f78d1d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ddc079), to(#c5a653));
-    background: -moz-linear-gradient(top,  #ddc079,  #c5a653);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddc079', endColorstr='#c5a653');
-	background-color: #C2A34E;
-    border: medium none;
+	background:#988B68;
 	border:none;
 	clear: both;
     margin-top: 2%;
@@ -8325,24 +8287,14 @@ color: #988B68;
 -moz-border-radius: 6px !important;
 -webkit-border-radius: 6px !important;
 	height: 1.7em;
-	margin-left:6px;
+	margin-left: 48%;
 
-}
-#rsitya_botonreg:hover {
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	background: #f78d1d;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c5a653), to(#ddc079));
-    background: -moz-linear-gradient(top,  #c5a653,  #ddc079);
-	background-color: #C2A34E;
 }
 /*Aquí comienza Registro/ Pantalla "no estás registrado. mensaje activación de cuenta"*/
 .rsinoe_he {
 	 float: left;
 	 text-align: left;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 4%;
     margin-top: 1%;
     width: 94%;
@@ -8362,7 +8314,7 @@ color: #988B68;
 	
 }
 .rsinoe_con {
-	/*height: 3em;*/
+	height: 8em;
 }
 /*Aquí comienza Registro/ Pantalla "recuperar contraseña 01"*/
 .recupconun_bot {
@@ -8383,8 +8335,8 @@ color: #988B68;
     width: 17%;
 }
 .recupcondo_box {
-	/*height: 8em;*/
-    padding-top: 2%;
+	height: 8em;
+    padding-top: 1%;
 }
 /*Aquí comienza Registro/ Pantalla "recuperar contraseña 04"*/
 .recupconcuatr_cont {
@@ -8404,7 +8356,7 @@ color: #988B68;
 }
 /*Aquí comienza Registro/ Pantalla "recuperar contraseña 05"*/
 .recupconcinc_box {
-	/* height: 6em;*/
+	 height: 6em;
     padding: 9px;
 }
 .recupconcinc_hrco {
@@ -8487,48 +8439,14 @@ color:#47789f;padding:15px;}
 .header_window .upgrade{float:left;}
 
 
-#window_area .header_window{display:none; position:absolute; background-color:#FFFFFF; width:247px; -moz-border-radius: 5px 0 5px 5px; -webkit-border-radius: 5px 0 5px 5px; border-radius:5px 0 5px 5px; -o-border-radius:5px 0 5px 5px; border:4px solid #eeeeee; border-top:0px; border-right:0px; margin-left:-111px; margin-top:-8px; z-index:2000; font-size: 1.1em; margin-left: -134px;}
+#window_area .header_window{display:none; position:absolute; background-color:#FFFFFF; width:323px; -moz-border-radius: 5px 0 5px 5px; -webkit-border-radius: 5px 0 5px 5px; border-radius:5px 0 5px 5px; -o-border-radius:5px 0 5px 5px; border:4px solid #eeeeee; border-top:0px; border-right:0px; margin-left:-145px; margin-top:-8px; z-index:2000;}
 
 
 #window_area{ margin-top:5px; float:right;}
 #window_area .login{ color: #ffffff; cursor:pointer; padding:5px 40px 5px 10px !important; margin:4px; margin-left:50px; 
 	background:#47789f url(images/flecha-off.png) no-repeat 90% center; border-radius:5px; -moz-border-radius:5px;
-	 -webkit-border-radius:5px; 
+	 -webkit-border-radius:5px; width:80px !important;
 	 border-color:#fff;border-style:solid;
-	border-width: 1px;font-size: 1.3em;}
+	border-width: 1px;}
 #window_area .login:hover{ }
-#window_area .login.active{color: #47789f; background:#ffffff url(images/flecha-on.png) no-repeat 90% center; border-bottom-radius:0px; -moz-border-bottom-radius:0px; -webkit-bottom-border-radius:0px;  border-bottom:0px; z-index:50; font-size: 1.3em;}
-
-
-.header_window .rsitya_dircc {
-	margin-left: 6px;
-	
-}
-.header_window .rsitya_contras {
-	margin-left: 6px;
-	
-}
-#remember_me {
-	margin-top:2px;
-}
-.rsitya_dircc.recupcondo_entr {
-	font-size: 1.4em;
-    line-height: 1em;
-}
-
-.link_button.large {
-	  font-size: 1.4em !important;
-    margin-left: 2.5% !important;
-    margin-top: 0 !important;
-    width: 18% !important;
-	
-}
-#submit.reheol {
-	font-size: 1.4em !important;
-    margin-left: 16px !important;
-    width: 17% !important;
-	
-}
-
-
-
+#window_area .login.active{color: #47789f; background:#ffffff url(images/flecha-on.png) no-repeat 90% center; border-bottom-radius:0px; -moz-border-bottom-radius:0px; -webkit-bottom-border-radius:0px;  border-bottom:0px; z-index:50;}
