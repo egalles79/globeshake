@@ -77,6 +77,7 @@ class Auth_public extends controlador {
     function index()
     {
         redirect('auth_public/dashboard');
+
     }
  
     /**
@@ -87,11 +88,30 @@ class Auth_public extends controlador {
     function dashboard()
     {
         // Get any status message that may have been set.
-         $data = $this->load_page();
-        $data['main_template']  = 'home';
-        $data['title'] = '';  
-        $data['description'] = '';  
-        $this->load->view('main_template', $data);  
+        $user_id = $this->flexi_auth->get_user_id();
+        $porcentaje = $this->flexi_auth_model->profile_is_completed($user_id);
+
+        if ($porcentaje==100) {
+            $data = $this->load_page();
+            $data['main_template']  = 'home';
+            $data['title'] = '';  
+            $data['description'] = '';  
+            $this->load->view('main_template', $data);
+        } else {
+            $data = $this->load_page();
+            $user = $data['user'];
+            $data['main_template']  = 'users/update_visit_card';
+            $data['title'] = '';
+            $data['description'] = '';
+            $data['message'] = 'Bienvenido '.$user['complet_name'].'. Tiene el '.$porcentaje.'% rellenado de tu tarjeta de visita. Para darse a conocer a usted y la empresa, rellene el 100% de la tarjeta. Gracias.';
+            
+            $this->load->model('country_model');
+            $data['countries'] = $this->country_model->getCountries();        
+            $this->load->model('sectors_model');
+            $data['sectors']   = $this->sectors_model->getSectors();
+
+            $this->load->view('main_template', $data); 
+        }
 
       }
 
@@ -288,30 +308,7 @@ class Auth_public extends controlador {
     */
     function buy_visit_card()
     {
-        $user_id = $this->flexi_auth->get_user_id();
-
-        $porcentaje = $this->flexi_auth_model->profile_is_completed($user_id);
-
-
-        if ($porcentaje==100) {
-            $this->buy_visit_card_ok();
-        } else {
-            $data = $this->load_page();
-            $user = $data['user'];
-            $data['main_template']  = 'users/update_visit_card';
-            $data['title'] = '';
-            $data['description'] = '';
-            $data['message'] = 'Bienvenido '.$user['complet_name'].'. Tiene el '.$porcentaje.'% rellenado de tu tarjeta de visita. Para darse a conocer a usted y la empresa, rellene el 100% de la tarjeta. Gracias.';
-            
-            $this->load->model('country_model');
-            $data['countries'] = $this->country_model->getCountries();        
-            $this->load->model('sectors_model');
-            $data['sectors']   = $this->sectors_model->getSectors();
-
-            $this->load->view('main_template', $data); 
-        
-           //$this->update_visit_card($Porcentaje);
-        }        
+        $this->buy_visit_card_ok();
     }
 
     function buy_visit_card_ok() {
@@ -329,7 +326,7 @@ class Auth_public extends controlador {
     */
     function update_visit_card($Porcentaje)
     {
-        
+        print_r($User);   
         $data = $this->load_page();
         $data['main_template']  = 'users/update_visit_card';
         $data['title'] = '';

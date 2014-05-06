@@ -1,0 +1,83 @@
+
+/****** SOBREESCRIBIMOS EL CSS DE JQUERY UI ***/
+
+ .ui-dialog-title, .ui-widget-header {
+  display: none;
+}
+
+.ui-dialog {
+	top: 43.5px; 
+	left: 370px; 
+	display: block; 
+	width: 540px;
+	border:none;
+}
+
+.ui-dialog-content {
+	font-size: 20px;
+	height: 111px; 
+	width: 500px;
+	position:relative;
+	text-align:left;
+	width:100%;
+	margin:10px 0 2px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	background-color:#fff;
+	background:url(images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y;
+	background:url(images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y;
+}
+.ui-dialog-buttonpane {
+	border:none;
+}
+.error_msg {
+	color:#414042 !important;
+	text-transform: none !important; 
+	font-family: "sourcesansproreg",Helvetica,Arial,sans-serif  !important; 
+	max-width: 95%;  
+	font-weight: normal !important; 
+	font-size: 23px; 
+	line-height: 1.1em;  
+}
+.ui-button-text-only .ui-button-text {
+	 padding: 0;
+}
+
+.ui-dialog-buttonset {
+	color: #2A4051;
+    float: left;
+    font-family: sourcesansprobold;
+    font-size: 2.2em;
+    margin-bottom: 0 !important;
+    text-align: center !important;
+	margin-top: 1%;
+    width: 100%;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default ,
+.ui-button {
+	margin-left: 0 !important;
+    margin-top: 0;
+	 background-color: #C5A653;
+	 text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ddc079), to(#c5a653));
+    background: -moz-linear-gradient(top,  #ddc079,  #c5a653);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddc079', endColorstr='#c5a653');
+	background-color: #C2A34E;
+    border: medium none;
+    color: #FFFFFF;
+    width: 24% !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	font-size: 0.7em !important;
+	padding: 7px;
+	-webkit-box-shadow: 5px 6px 7px -3px #adadad;
+	-moz-box-shadow: 5px 6px 7px -3px #adadad;
+	box-shadow: 5px 6px 7px -3px #adadad;
+}
