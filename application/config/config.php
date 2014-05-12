@@ -15,12 +15,12 @@
 |
 */
 
-date_default_timezone_set('UTC');
-//CONFIGURACIÓ LOCAL
-$config['base_url']	= 'http://globeshake.site/';
 
+//CONFIGURACIÓ LOCAL
+//$config['base_url']	= 'http://globeshake.site/';
+date_default_timezone_set('UTC');
 //CONFIGURACIÓ SERVIDOR
-//$config['base_url']	= 'http://www.globeshake.com/test/';
+$config['base_url']	= 'http://globeshake.site/';
 
 /*
 |--------------------------------------------------------------------------

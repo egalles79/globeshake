@@ -39,4 +39,5 @@ $lang['user.PwdActual'] = "Contraseña actual";
 $lang['user.PwdNova'] = "Nueva contraseña";
 $lang['user.PwdNova2'] = "Confirma nueva contraseña";
 $lang['user.ActualitzarPwd'] ="Actualizar contraseña";
+$lang['user.tarjetavisita'] = "Su tarjeta de visita virtual GS";
 ?>

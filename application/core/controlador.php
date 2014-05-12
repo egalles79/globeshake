@@ -22,13 +22,14 @@ class controlador extends CI_Controller
         $this->load->helper('html');
         $this->lang->load('user');
         $this->lang->load('country');
-        
+        $this->lang->load('menu');
         
 		$data['keywords'] = 'keywords';
 
         $data['logged'] = $this->flexi_auth->is_logged_in();
         $data['email'] = $this->flexi_auth->get_user_identity();
         $data['user'] = $this->flexi_auth->get_data($this->flexi_auth->get_user_id());
+        $data['type'] = 'business';
 
         //$data['user'] = $this->flexi_auth->get_user_by_identity_row_array();
         

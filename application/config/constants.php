@@ -41,15 +41,15 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 /* Location: ./application/config/constants.php */
 
 //CONFIGURACIÓ LOCAL
- define("LAYOUT_URL","http://globeshake.site/css/");
- define("IMAGES_URL","http://globeshake.site/images/");
- define("JS_URL","http://globeshake.site/js/");
+ //define("LAYOUT_URL","http://globeshake.site/css/");
+ //define("IMAGES_URL","http://globeshake.site/images/");
+ //define("JS_URL","http://globeshake.site/js/");
 
 
 //CONFIGURACIÓ SERVIDOR
-// define("LAYOUT_URL","http://www.globeshake.com/test/css/");
-// define("IMAGES_URL","http://www.globeshake.com/test/images/");
-// define("JS_URL","http://www.globeshake.com/test/js/");
+define("LAYOUT_URL","http://www.globeshake.com/test/css/");
+define("IMAGES_URL","http://www.globeshake.com/test/images/");
+define("JS_URL","http://www.globeshake.com/test/js/");
 
 
 

@@ -109,7 +109,11 @@
   });
 	/* ]]> */
 	</script>
-
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
 
 </body>
 </html>

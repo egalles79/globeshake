@@ -1,15 +1,19 @@
+<?php
+	$idioma = $this->lang->lang();	
+	$urlBase = base_url().$idioma.'/'; 
+?>
 <div class="row containgener">
 	<section class="decontornno">
 		<!-- Inicio columna de la izda la del logo --> 
 		<div class="grid_2 logo globes">
-			<a href="<?php echo base_url();?>"><img src="<?php echo IMAGES_URL;?>logo_Globeshake.png" title="GlobeShake" alt="GlobeShake"></a>		
+			<a href="<?php echo $urlBase;?>"><img src="<?php echo IMAGES_URL;?>logo_Globeshake.png" title="GlobeShake" alt="GlobeShake"></a>		
 		</div>
 	
 
 	
     	<div class="recuadrctv ctvist clearfix">    
     		<div class="nombre clearfix">
-				<a class="ctvisitent" href="<?php echo base_url().'auth_public/buy_visit_card';?>">Comprar tarjetas visita</a>
+				<a class="ctvisitent" href="<?php echo $urlBase.'auth_public/buy_visit_card';?>">Comprar tarjetas visita</a>
 			</div>
             <!-- Inicio ficha persona-->
             <div class="nombre clearfix">            
@@ -59,12 +63,15 @@
 	<nav>        
         <div class="grid_10">        
         	<!-- Inicio de frase Ponga a su empresa....-->
-        	<div class="grid_10 pasempr">Ponga a su empresa en el mapa / Construcción, Ingeniería, Arquitectura</div>
+        	<div class="grid_10 pasempr"><?=lang('menu.textprincipal');?></div>
         	<!-- Fin de frase Ponga a su empresa....-->
 	            <div class="grid_10 botopri">
 					<ul class="tabs añadidcont" data-gen="flipInY">
-						<li class="aprueba"><a href="#" class="active selectedb">Mi empresa</a></li>
-						<li><a href="#" class="selectedc">Mi perfil profesional</a></li>
+						
+						<li class="aprueba">
+							<a href="<?php echo $urlBase;?>auth_public/dashboard/business" class="<?php if ($type == 'business') { echo 'active'; }?> selectedb"><?=lang('menu.tituloempresa');?></a></li>
+						<li>
+							<a href="<?php echo $urlBase;?>auth_public/dashboard/professional" class="selectedc <?php if ($type == 'professional') { echo 'active'; }?>"><?=lang('menu.profesional');?></a></li>
 					</ul>
 				</div>
             </div>           
@@ -73,28 +80,48 @@
     <section><!-- Principio del mapa -->
 		<div class="princbotones">
 			<ul class="sf-menu colorsubconttootorre">
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Dar a conocer mi empresa</a>
+				<?php if ($type == 'business') { ?>
+				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html"><?=lang('menu.daraconocer');?></a>
 					<ul>
-						<li><a href="index2-revolution.html">Crear CV</a></li>
-						<li><a href="index3-nivo.html">Resumen CV Empresa</a></li>	
-                        <li><a href="index3-nivo.html">Enviar Candidatura Empresa</a></li>	
+						<li><a href="index2-revolution.html"><?=lang('menu.presenta');?></a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.creacv');?></a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.resumencv');?></a></li>	
+                        <li><a href="index3-nivo.html"><?=lang('menu.creaportal');?></a></li>	
             		</ul>
 				</li>
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Control de inteligencia</a>
+				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html"><?=lang('menu.colaboradores');?></a>
 					<ul>
-						<li><a href="index2-revolution.html">Listas Internas</a></li>
-						<li><a href="index3-nivo.html">Crear Lista</a></li>	
-                        <li><a href="index3-nivo.html">Mis Listas</a></li>	
+						<li><a href="index2-revolution.html"><?=lang('menu.listasinternas');?></a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.crealista');?></a></li>	
+                        <li><a href="index3-nivo.html"><?=lang('menu.mislistas');?></a></li>	
 					</ul>
 				</li>
-				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Control licitaciones</a>
+				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html"><?=lang('menu.licitaciones');?></a>
 					<ul>
-						<li><a href="index2-revolution.html">Publicar Licitación</a></li>
-						<li><a href="index3-nivo.html">Petición oferta</a></li>
-                        <li><a href="index3-nivo.html">Filtrar Licitaciones</a></li>
-                        <li><a href="index3-nivo.html">Market Survey</a></li>			
+						<li><a href="index2-revolution.html"><?=lang('menu.publicarlicitacion');?></a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.peticionoferta');?></a></li>
+                        <li><a href="index3-nivo.html"><?=lang('menu.listasinternas');?></a></li>
+                        <li><a href="index3-nivo.html"><?=lang('menu.marketsurvey');?></a></li>			
 					</ul>
 				</li>
+				<?php } else { ?>
+				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Dar a conocer mi perfil</a>
+					<ul>
+						<li><a href="index2-revolution.html">Preséntate profesionalmente</a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.creacv');?></a></li>
+						<li><a href="index3-nivo.html"><?=lang('menu.resumencv');?></a></li>	
+                        <li><a href="index3-nivo.html">Soy especialista</a></li>
+						<li><a href="index3-nivo.html">Sé visible en la empresa</a></li>	
+            		</ul>
+				</li>
+				<li class="current selectedLava"><a class="colorsubconttoo" href="index.html">Buscar (general)</a>
+					<ul>
+						<li><a href="index2-revolution.html">Personas</a></li>
+						<li><a href="index3-nivo.html">Contactos</a></li>	
+                        <li><a href="index3-nivo.html">Empresas</a></li>	
+					</ul>
+				</li>
+				<?php }?>
 			</ul><!-- end menu -->
 			<div class="grid_2 search partbocont">
 				<form action="search.html" id="search" method="get">

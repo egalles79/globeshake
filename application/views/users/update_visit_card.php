@@ -6,7 +6,7 @@
     <?php } ?>
 
 <div class="tarjvitr_container">
-  <div class="tarjvitr_containertext">Su tarjeta de Visita virtual GS</div>
+  <div class="tarjvitr_containertext"><?=lang('user.tarjetavisita');?></div>
   <div class="tarjvitr_con">
     <div class="tarjvitr_condos">
       <form  id="pedo" method="post" action="#">
@@ -148,9 +148,9 @@ if($user['country']==$name['Code']) {
       
         <ul class="tabs">
           <li class="nsqptacont"><a href="#t-1" class="active">Tus proyectos en el mundo</a></li>
-          <li class="nsqptacont"><a href="#t-4">Continente</a></li>
-          <li class="nsqptacont"><a href="#t-3">País</a></li>
           <li class="nsqptacont"><a href="#t-2">Crear CV</a></li>
+          <li class="nsqptacont"><a href="#t-3">País</a></li>
+          <li class="nsqptacont"><a href="#t-4">Continente</a></li>
         </ul><!-- tabs -->
 
         <ul class="tabs-content borcontab grirectabscondos">

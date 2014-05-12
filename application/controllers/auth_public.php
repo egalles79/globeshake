@@ -85,25 +85,26 @@ class Auth_public extends controlador {
      * The public account dashboard page that acts as the landing page for newly logged in public users.
      * The dashboard provides links to some examples of the features available from the flexi auth library.  
      */
-    function dashboard()
+    function dashboard($type = null)
     {
         // Get any status message that may have been set.
         $user_id = $this->flexi_auth->get_user_id();
         $porcentaje = $this->flexi_auth_model->profile_is_completed($user_id);
+        $type = ($type == null) ? 'business' : $type;
+        $data = $this->load_page();
+        $data['type'] = $type;
 
-        if ($porcentaje==100) {
-            $data = $this->load_page();
+        if ($porcentaje==100) {            
             $data['main_template']  = 'home';
             $data['title'] = '';  
-            $data['description'] = '';  
+            $data['description'] = '';
             $this->load->view('main_template', $data);
-        } else {
-            $data = $this->load_page();
+        } else {        
             $user = $data['user'];
             $data['main_template']  = 'users/update_visit_card';
             $data['title'] = '';
             $data['description'] = '';
-            $data['message'] = 'Bienvenido '.$user['complet_name'].'. Tiene el '.$porcentaje.'% rellenado de tu tarjeta de visita. Para darse a conocer a usted y la empresa, rellene el 100% de la tarjeta. Gracias.';
+            $data['message'] = 'Bienvenido '.$user['complet_name'].'. Tiene el '.$porcentaje.'% rellenado de su tarjeta de visita. Para darse a conocer a usted y la empresa, rellene el 100% de la tarjeta. Gracias.';
             
             $this->load->model('country_model');
             $data['countries'] = $this->country_model->getCountries();        
@@ -112,9 +113,8 @@ class Auth_public extends controlador {
 
             $this->load->view('main_template', $data); 
         }
-
       }
-
+    
     ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###  
     // Public Account Management
     ###++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++###  
@@ -326,7 +326,7 @@ class Auth_public extends controlador {
     */
     function update_visit_card($Porcentaje)
     {
-        print_r($User);   
+        
         $data = $this->load_page();
         $data['main_template']  = 'users/update_visit_card';
         $data['title'] = '';
