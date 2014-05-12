@@ -13,7 +13,11 @@
 	
     	<div class="recuadrctv ctvist clearfix">    
     		<div class="nombre clearfix">
-				<a class="ctvisitent" href="<?php echo $urlBase.'auth_public/buy_visit_card';?>">Comprar tarjetas visita</a>
+				<ul class="list">
+					<li>
+						<a class="various ctvisitent" data-fancybox-type="iframe" href="<?php echo $urlBase;?>auth_public/buy_visit_card">Comprar tarjetas visita</a>
+					</li>
+				</ul>
 			</div>
             <!-- Inicio ficha persona-->
             <div class="nombre clearfix">            

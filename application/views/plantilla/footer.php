@@ -1,29 +1,4 @@
-</div><!-- Fin del contenedor: row containgener -->
 
-	<footer id="footer" class="dtketicont">
-		<div class="footer-last row mtf clearfix">
-
-			<div class="foot-menu">
-				<ul>
-					<li><a href="#">GlobeShake BETA Copyright @ 2014</a></li>
-					<li><a href="#">Copyright</a></li>
-					<li><a href="#">Condiciones de uso</a></li>
-					<li><a href="#">Política de Privacidad</a></li>
-					<li><a href="#">Directrices comunitarias</a></li>
-					<li><a href="#">Política de Copyright</a></li>
-					<li><a href="#">Blog</a></li>
-				</ul><!-- end links -->
-			</div><!-- end foot menu -->
-
-		</div><!-- end last footer -->
-
-	</footer><!-- end footer -->
-</div><!-- end layout -->
-
-
-
-
-<div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
   <script src="//code.jquery.com/jquery-1.9.1.js"></script>
   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
@@ -40,13 +15,23 @@
 	<script type="text/javascript" src="<?php echo JS_URL;?>gmap3.js"></script>
 	<script type="text/javascript" src="<?php echo JS_URL;?>twitter/jquery.tweet.js"></script>
 	<script type="text/javascript" src="<?php echo JS_URL;?>custom.js"></script>
-
+	<script type="text/javascript" src="<?php echo JS_URL;?>fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo JS_URL;?>fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 	<script type="text/javascript">	
 	/* <![CDATA[ */
 		var tpj=jQuery;
 		tpj.noConflict();
 		tpj(document).ready(function() {
+			tpj(".various").fancybox({
+				fitToView	: false,
+				width		: '90%',
+				height		: '90%',
+				autoSize	: false,
+				closeClick	: true,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
 		if (tpj.fn.cssOriginal!=undefined)
 			tpj.fn.css = tpj.fn.cssOriginal;
 			var api= tpj('.revolution').revolution({
@@ -113,7 +98,7 @@
   $(function() {
     $( "#tabs" ).tabs();
   });
-  </script>
 
+  </script>
 </body>
 </html>

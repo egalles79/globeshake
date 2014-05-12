@@ -9323,9 +9323,344 @@ padding: 4px 8px 8px;
 	-moz-box-shadow: 5px 6px 7px -3px #adadad;
 	box-shadow: 5px 6px 7px -3px #adadad;
 }
+/****** INICIO DE TIENDA DE TARJETAS VIRTUALES ***/
 
+.tv_panttienda_tarjevirt {
+	color:#414042 !important;text-transform: none !important; font-family: "sourcesansproreg",Helvetica,Arial,sans-serif  !important; max-width: 100%;  font-weight: normal !important; font-size: 1.5em; line-height: 1.1em; margin-top: 1.3%;margin-left: 7%;text-transform: uppercase !important; 
+}
+.tv_panttienda_tarjevirtdos {
+	color:#47789f !important;text-transform: uppercase; !important; font-family: "sourcesansprobold",Helvetica,Arial,sans-serif  !important; max-width: 95%; font-size: 3em; text-align: center;margin-top: 3%;line-height: 1em;
+}
+.tv_panttienda_tarjevirttres {
+	color: #47789F;
+font-size: 3em;
+width: 48%;
+float: left;
+line-height: 1.3em;
+margin-left: 8%;
+margin-top: 2%;
+}
+.tarjvitr_containerbuttres {
+    color: #2A4051;
+    font-family: sourcesansprobold;
+    font-size: 2.2em;
+    margin-bottom: 0 !important;
+    text-align: center !important;
+	margin-top: 1%;
+    width: 100%;
+}
+#tarjvitr_aceptartres {
+   margin-left: 35% !important;
+    margin-top: 0;
+	 background-color: #C5A653;
+	 text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#47789f), to(#47789f));
+    background: -moz-linear-gradient(top,  #47789f,  #47789f);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ddc079', endColorstr='#c5a653');
+	background-color: #C2A34E;
+    border: medium none;
+    color: #FFFFFF;
+    width: 24% !important;
+	border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+ font-size: 0.7em !important;
+padding: 7px;
+ -webkit-box-shadow: 5px 6px 7px -3px #adadad;
+   -moz-box-shadow: 5px 6px 7px -3px #adadad;
+   box-shadow: 5px 6px 7px -3px #adadad;
+   float:left;
+      margin-bottom: 2%;
+}
+.tv_panttienda_tarjetavisitaimg img {
+	float: right;
+width: 29%;
+margin-right: 10%;
+	
+}
+.tv_tarvirtualuno {
+	border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    float: left;
+    padding-bottom: 3%;
+    padding-top: 4%;
+    width: 86%;
+	 margin-left: 7%;
+   margin-top: 1%;
+margin-right: 7%;
+	
+}
+.tv_tarvirtualunobis {
+	font-size: 2em;
+    float: left;
+    padding-top: 4%;
+    width: 86%;
+	 margin-left: 7%;
+   margin-top: 1%;
+margin-right: 7%;
+	
+}
+.tv_tarvirtualunotris {
+	font-size: 2em;
+    float: left;
+    padding-bottom: 3%;
+    padding-top: 4%;
+    width: 86%;
+	 margin-left: 7%;
+   margin-top: 1%;
+margin-right: 7%;
+	
+}
+.tv_panttienda_boxbei {
+	 background-color: #DDC079;
+    float: left;
+    width: 100%;
+	 
+ }
+.tv_panttienda_boxbeidos {
+	border-bottom: 1px solid #666666;
+	  padding-bottom: 2%;
+    float: left;
+    width: 100%;
+	margin-top:2%;
+	color:#47789F;
+	 
+ }
+.tv_panttienda_boxbei p {
+	 color: #000000;
+    float: left;
+    font-size: 0.8em;
+    padding-bottom: 0 !important;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 19px;
+    width: 40%;
+ }
+ 
+ .tarjvitr_but {
+	 background-color: #47789F;
+    float: left;
+    font-size: 0.8em;
+    margin-left: 11%;
+    margin-top: 3%;
+    padding: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 31%;
+	 
+ }
+ .tarjvitr_but a {
+	 color:#FFF;
+	 
+ }
+.tv_panttienda_boxinf {
+    float: left;
+    height: 20%;
+    width: 100%;
+	border-bottom: 1px dotted #666666;
+ }
+ .tv_panttienda_boxinfdos {
+	 margin-top: 1%;
+	 border-right: 1px dotted #666666;
+    float: left;
+    height: 20%;
+    padding: 2%;
+    width: 20%;
+ }
+ .tv_panttienda_boxinftres {
+	 float: left;
+    height: 20%;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 0 !important;
+    padding-top: 2%;
+    width: 31%;
+ }
+ .tv_panttienda_boxinfcuatro {
+	 border-left: 1px solid #999999;
+	   font-size: 0.8em !important;
+    float: left;
+    height: 20%;
+    padding: 2%;
+    width: 36%;
+ }
+ .tv_panttienda_boxinfdos img {
+	margin-left: 13%;
+    width: 52%;
+ }
+.tv_panttienda_precio {
+	 float:left;
+	 
+ }
+ .tv_panttienda_boxfinuno {
+	  float: left;
+    width: 100%;
+	margin-bottom: -6%;	 
+ }
+  .tv_panttienda_boxfinuno p {
+	 float: left;
+    font-size: 0.8em;
+    margin-left: 4%;
+	 margin-right: 2%;
+ }
+  .tv_panttienda_boxfindos {
+	 /*float:left;	 */
+	 margin-bottom:0!important;
+ }
+  .tv_panttienda_boxfindos p {
+	 float: left;
+    font-size: 0.8em;
+    margin-left: 4%;
+	 margin-right: 2%;
+ }
+  .tv_panttienda_boxfintres {
+	 float:left;
+	  margin-left: 7%;	
+	    margin-top: -15px !important; 
+ }
+  .tv_panttienda_boxfintres p {
+	  float: left;
+    font-size: 0.8em;
+    margin-left: 4%;
+	 margin-right: 2%;	 
+ }
+  .tv_panttienda_boxfincuatro {
+	float: left;
+    margin-top: -5%;
+ }
+  .tv_panttienda_boxfincuatro p {
+	float: left;
+    font-size: 0.8em;
+    margin-left: 3%;
+    margin-right: 2%;
+ }
+  .tv_panttienda_boxfinuno img {
+	float: left;
+	margin-left: 20%;
+    width: 17%;
+ }
+   .tv_panttienda_boxfindos img {
+	 float: left;
+    margin-left: 12.5%;
+    width: 25%;
+ }
+   .tv_panttienda_boxfintres img {
+	  float: left;
+	  margin-left: 2%;
+    width: 31%;
+ }
+   .tv_panttienda_boxfincuatro img {
+	  float: left;
+    margin-left: 1%;
+    width: 37%;
+ }
+ .tv_panttienda_tarjevirtse {
+	   color: #666666;
+    float: left;
+    margin-bottom: 4%;
+    text-align: center;
+    width: 100%;
+	 
+ }
+#tv_panttienda_cont {
+	border-radius: 11px;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+    border: 1px solid #999999;
+    float: left;
+    /*margin: 6% auto 0 16%;*/
+    width: 1062px !important;
+ }
+ .tv_panttienda_tarjevirtcuatr {
+	    border-right: 1px dotted #666666;;
+    float: left;
+    text-transform: uppercase;
+	margin-bottom: 3%;
+	margin-left: 8%;
+    width: 25%;
+	 
+ }
+ .tv_panttienda__precio {
+	   clear: both;
+    float: left;
+    font-weight: bold;
+    margin-left: 20%;
+	 color: #000000;
+	 
+ }
+ .tv_panttienda_tarjvitr_eplaut {
+	 float: left !important;
+    margin-right: 3px !important;
+}
+.tv_panttienda_boxinfdos p {
+	margin-bottom: 6% !important;
+    margin-left: 15%;
+    margin-top: 5%;
+	
+}
+.tv_panttienda_boxinftres p {
+	font-size: 0.8em;
+	
+}
+.variospantienda {
+	border-right:none;
+	
+}
+.tv_panttienda_precioss {
+	clear:both;
+	
+}
+.tv_panttienda_precioss span {
+	font-size:1.4em;
+	color:#999999;
+	 margin-left: 7%;
+	
+}
+.tv_panttienda_eur {
+	font-weight:bold;
+	color:#000000 !important;
+	
+}
+ .tv_panttienda_comp {
+	 color: #000000;
+    font-weight: bold;
+    margin-left: 6%;
+	 
+ }
+ .tv_panttienda_tarjvitr_tarjevirtse {
+	 margin-right:1% !important;
+	 
+ }
+ .tv_panttienda_tarjevirt span {
+	 color: #DDC079;
+ }
 
-
-
-
-
+.tv_panttienda_boxfinuno p span {
+	color:#000000;
+	
+}
+.tv_panttienda_boxfindos p span {
+	color:#000000;
+	
+}
+.tv_panttienda_boxfintres p span {
+	color:#000000;
+	
+}
+.tv_panttienda_boxfincuatro p span {
+	color:#000000;
+	
+}
+.tv_panttienda_tarjjc {
+	float: left;
+    margin-top: 7%;
+}
+.tv_panttienda_pack {
+	color:#47789F;
+	
+}

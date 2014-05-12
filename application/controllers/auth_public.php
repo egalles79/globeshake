@@ -308,7 +308,16 @@ class Auth_public extends controlador {
     */
     function buy_visit_card()
     {
-        $this->buy_visit_card_ok();
+        //$this->buy_visit_card_ok();
+        //$data             = $this->load_page();
+        //$data['fancybox'] = true;
+        //$data['main_template']  = 'users/buy_visit_card';
+        $data['title'] = '';
+        $data['description'] = '';
+        $data['keywords'] = 'keywords';
+        $this->load->view('plantilla/header',$data);
+        $this->load->view('users/buy_visit_card', $data); 
+        $this->load->view('plantilla/footer',$data);
     }
 
     function buy_visit_card_ok() {
